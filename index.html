@@ -1177,16 +1177,14 @@ button { font-family: var(--sans); cursor: pointer; }
     padding: 12px 16px !important;
   }
 
-  /* Horizontal swipeable carousels for mobile with axis locking & scroll snapping */
+  /* Horizontal swipeable carousels for mobile fallback */
   .mobile-carousel {
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
     gap: 16px !important;
-    padding-top: 12px !important;
-    padding-bottom: 28px !important;
-    margin-top: -12px !important;
+    padding-bottom: 24px !important;
     -webkit-overflow-scrolling: touch;
     width: 100vw !important;
     position: relative !important;
@@ -1199,7 +1197,6 @@ button { font-family: var(--sans); cursor: pointer; }
     scrollbar-width: none !important;
     align-items: stretch !important;
     touch-action: pan-y !important;
-    scroll-snap-type: x mandatory !important;
   }
   .mobile-carousel::-webkit-scrollbar {
     display: none !important;
@@ -1209,7 +1206,42 @@ button { font-family: var(--sans); cursor: pointer; }
     max-width: 80% !important;
     height: auto !important;
     margin: 0 !important;
-    scroll-snap-align: start !important;
+  }
+
+  /* Infinite Marquee for Mobile */
+  .marquee-wrapper {
+    overflow: hidden !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+  .marquee-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 16px !important;
+    width: max-content !important;
+    animation: marquee-scroll 32s linear infinite !important;
+    align-items: stretch !important;
+  }
+  .marquee-track > * {
+    flex: 0 0 280px !important;
+    width: 280px !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 8px));
+    }
   }
 
   /* Tabbed Procedures for Mobile */
@@ -1969,50 +2001,48 @@ button { font-family: var(--sans); cursor: pointer; }
   checkTimeline();
   updateNav();
 
-  /* ── Mobile Carousels Auto-scroll (Card-by-Card) ── */
-  const carousels = document.querySelectorAll('.mobile-carousel');
-  carousels.forEach(carousel => {
-    let scrollInterval;
-    let activeCardIndex = 0;
-
-    function getCardWidth() {
-      const firstCard = carousel.firstElementChild;
-      if (!firstCard) return 0;
-      const gap = parseFloat(window.getComputedStyle(carousel).gap) || 16;
-      return firstCard.offsetWidth + gap;
-    }
-
-    function autoScrollToNext() {
-      const cardsCount = carousel.children.length;
-      if (cardsCount <= 1) return;
+  /* ── Infinite Marquee Setup on Mobile ── */
+  if (window.innerWidth <= 768) {
+    const marquees = document.querySelectorAll('.mobile-carousel');
+    marquees.forEach(carousel => {
+      // 1. Create a wrapper div to contain the overflow and bleed edge-to-edge
+      const wrapper = document.createElement('div');
+      wrapper.className = 'marquee-wrapper';
       
-      activeCardIndex = (activeCardIndex + 1) % cardsCount;
-      const cardWidth = getCardWidth();
+      // 2. Create the scrolling track
+      const track = document.createElement('div');
+      track.className = 'marquee-track';
       
-      carousel.scrollTo({
-        left: activeCardIndex * cardWidth,
-        behavior: 'smooth'
+      // 3. Move all cards from carousel into track
+      const cards = Array.from(carousel.children);
+      cards.forEach(card => {
+        // Remove scroll-reveal (sr) and delays classes so cards don't stay hidden or animate individual transforms
+        card.classList.remove('sr', 'd1', 'd2', 'd3', 'd4', 'd5', 'd6', 'in', 'above');
+        track.appendChild(card);
       });
-    }
-
-    function startAutoScroll() {
-      scrollInterval = setInterval(autoScrollToNext, 7000);
-    }
-
-    startAutoScroll();
-
-    carousel.addEventListener('touchstart', () => clearInterval(scrollInterval), {passive: true});
-    carousel.addEventListener('touchend', () => {
-      setTimeout(() => {
-        const cardWidth = getCardWidth();
-        if (cardWidth > 0) {
-          activeCardIndex = Math.round(carousel.scrollLeft / cardWidth);
-        }
-        clearInterval(scrollInterval);
-        startAutoScroll();
-      }, 1500);
-    }, {passive: true});
-  });
+      
+      // 4. Duplicate the cards to create the seamless loop
+      cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        track.appendChild(clone);
+      });
+      
+      // 5. Build structure: wrapper -> track -> cards
+      wrapper.appendChild(track);
+      
+      // 6. Replace carousel contents with the wrapper
+      carousel.innerHTML = '';
+      carousel.appendChild(wrapper);
+      
+      // Remove horizontal scroll/sizing styles from parent container so it doesn't clip
+      carousel.style.position = 'static';
+      carousel.style.width = '100%';
+      carousel.style.marginLeft = '0';
+      carousel.style.marginRight = '0';
+      carousel.style.padding = '0';
+      carousel.style.overflow = 'visible';
+    });
+  }
 
   /* ── Procedures Mobile Tabs ── */
   const tabBtns = document.querySelectorAll('.proc-tab-btn');
