@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonização Facial em Rio Pardo de Minas | Gizelly Viana</title>
+  <meta name="description" content="Agende sua avaliação com Gizelly Viana em Rio Pardo de Minas/MG. Botox, bioestimuladores de colágeno, preenchimento facial e harmonização facial com técnica, cuidado e responsabilidade.">
+  <meta name="keywords" content="harmonização facial Rio Pardo de Minas, botox Rio Pardo de Minas, preenchimento facial, bioestimulador colágeno, estética facial, procedimentos estéticos, autoestima, beleza natural">
+  <meta name="author" content="Gizelly Viana">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harmonização Facial em Rio Pardo de Minas | Gizelly Viana">
+  <meta property="og:description" content="Procedimentos estéticos com técnica, cuidado e responsabilidade. A beleza mora nos detalhes.">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Gizelly Viana — Harmonização Facial","description":"Procedimentos estéticos faciais realizados com técnica, cuidado e responsabilidade.","telephone":"+5538991644520","address":{"@type":"PostalAddress","addressLocality":"Rio Pardo de Minas","addressRegion":"MG","addressCountry":"BR"},"sameAs":["https://www.instagram.com/gizelly_viana/"]}</script>
+
+<style>
+/* ═══════════════════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════════════════ */
+:root {
+  --c-cream:    #FFF8F2;
+  --c-light:    #F4EDE4;
+  --c-mid:      #EAE0D4;
+  --c-nude:     #E2D0C4;
+  --c-taupe:    #A98D7C;
+  --c-brown:    #4B342B;
+  --c-brown2:   #6B4C40;
+  --c-brown3:   #3A2820;
+  --c-gold:     #C8A45D;
+  --c-gold2:    #D9B87A;
+  --c-gold3:    #EDD9A3;
+  --c-off:      #FFF9F3;
+
+  --t-primary:  #2E1B13;
+  --t-body:     #5C3D30;
+  --t-muted:    #9A7968;
+  --b-soft:     rgba(169,141,124,.18);
+  --b-gold:     rgba(200,164,93,.28);
+  --g-gold:     rgba(200,164,93,.10);
+  --sh-warm:    0 8px 48px rgba(75,52,43,.09);
+  --sh-card:    0 2px 24px rgba(75,52,43,.06);
+  --sh-hover:   0 16px 56px rgba(75,52,43,.14);
+
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+
+  --mw:    1440px;
+  --r-sm:  8px;
+  --r:     14px;
+  --r-lg:  22px;
+  --r-xl:  32px;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-back:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur:         0.72s;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  font-family: var(--sans);
+  background: var(--c-cream);
+  color: var(--t-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font-family: var(--sans); cursor: pointer; }
+
+.container { width: 100%; max-width: var(--mw); margin: 0 auto; padding: 0 56px; }
+@media (max-width: 1200px) { .container { padding: 0 40px; } }
+@media (max-width: 768px) { .container { padding: 0 20px; } }
+
+/* ═══════════════════════════════════════════════════════
+   MESH GRADIENT BACKGROUND (fixed, full-page)
+═══════════════════════════════════════════════════════ */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--c-cream);
+}
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  mix-blend-mode: multiply;
+  will-change: transform;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.mb1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(200,164,93,.22) 0%, rgba(232,216,207,.14) 50%, transparent 80%);
+  top: -200px; right: -180px;
+  animation: mb1-move 18s ease-in-out infinite alternate;
+}
+.mb2 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(232,208,196,.35) 0%, rgba(244,237,228,.2) 50%, transparent 80%);
+  bottom: 10%; left: -160px;
+  animation: mb2-move 22s ease-in-out infinite alternate;
+}
+.mb3 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(200,164,93,.12) 0%, transparent 70%);
+  top: 40%; left: 30%;
+  animation: mb3-move 15s ease-in-out infinite alternate;
+}
+.mb4 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(169,141,124,.14) 0%, transparent 70%);
+  top: 60%; right: 5%;
+  animation: mb4-move 25s ease-in-out infinite alternate;
+}
+@keyframes mb1-move { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(-80px,60px) scale(1.15)} 100%{transform:translate(40px,-40px) scale(0.92)} }
+@keyframes mb2-move { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(70px,-50px) scale(1.1)} 100%{transform:translate(-30px,30px) scale(0.95)} }
+@keyframes mb3-move { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(50px,60px) scale(1.2)} 100%{transform:translate(-60px,-30px) scale(0.88)} }
+@keyframes mb4-move { 0%{transform:translate(0,0)} 100%{transform:translate(-60px,40px)} }
+
+/* Noise overlay for texture */
+.mesh-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════
+   TYPOGRAPHY TOKENS
+═══════════════════════════════════════════════════════ */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 20px;
+}
+.eyebrow::before, .eyebrow::after {
+  content: '';
+  display: block;
+  width: 22px; height: 1px;
+  background: var(--c-gold);
+  opacity: .65;
+}
+
+.h-section {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.10;
+  color: var(--c-brown);
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+.h-section em { font-style: italic; color: var(--c-brown2); }
+
+.body-text {
+  font-family: var(--sans);
+  font-size: clamp(.92rem, 1.3vw, 1.05rem);
+  color: var(--t-body);
+  line-height: 1.85;
+  font-weight: 300;
+}
+.body-text.centered { max-width: 720px; margin: 0 auto; text-align: center; }
+
+/* ═══════════════════════════════════════════════════════
+   ORNAMENT
+═══════════════════════════════════════════════════════ */
+.orn {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 22px auto;
+}
+.orn-line { flex: 1; max-width: 72px; height: 1px; background: linear-gradient(to right, transparent, var(--c-gold)); opacity: .45; }
+.orn-line.rev { background: linear-gradient(to left, transparent, var(--c-gold)); }
+/* Sparkle icon - no AI look */
+.orn-spark {
+  width: 10px; height: 10px;
+  background: var(--c-gold);
+  opacity: .7;
+  clip-path: polygon(50% 0%,53% 47%,100% 50%,53% 53%,50% 100%,47% 53%,0% 50%,47% 47%);
+}
+
+/* ═══════════════════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 9px; padding: 14px 30px;
+  border-radius: 100px;
+  font-family: var(--sans); font-size: .78rem;
+  font-weight: 500; letter-spacing: .10em; text-transform: uppercase;
+  cursor: pointer; border: none;
+  transition: transform .4s var(--ease-out), box-shadow .4s var(--ease-out), background .3s;
+  text-decoration: none; white-space: nowrap;
+  position: relative; overflow: hidden;
+}
+.btn::after {
+  content: '';
+  position: absolute; top: 0; left: -70%;
+  width: 50%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,.3), transparent);
+  transform: skewX(-20deg);
+  transition: left .7s var(--ease-out);
+  pointer-events: none;
+}
+.btn:hover::after { left: 130%; }
+.btn:active { transform: scale(.96) !important; }
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--c-gold) 0%, var(--c-gold2) 100%);
+  color: var(--c-brown);
+  box-shadow: 0 4px 22px rgba(200,164,93,.30);
+}
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(200,164,93,.42); }
+
+.btn-line {
+  background: transparent; color: var(--c-brown);
+  border: 1.5px solid var(--b-gold);
+}
+.btn-line:hover { background: var(--g-gold); border-color: var(--c-gold); transform: translateY(-2px); }
+
+.btn-dark {
+  background: transparent; color: rgba(255,249,243,.85);
+  border: 1.5px solid rgba(200,164,93,.3);
+}
+.btn-dark:hover { background: rgba(200,164,93,.12); border-color: var(--c-gold); transform: translateY(-2px); }
+
+/* ═══════════════════════════════════════════════════════
+   SCROLL ANIMATION ENGINE (bidirectional)
+   Classes managed by JS
+═══════════════════════════════════════════════════════ */
+/* Base state – element is below viewport, entering from bottom */
+.sr {
+  --sr-dist-y: 36px;
+  --sr-dist-x: 0px;
+  --sr-scale: 1;
+  --sr-rotate: 0deg;
+  opacity: 0;
+  transform: translateY(var(--sr-dist-y)) translateX(var(--sr-dist-x)) scale(var(--sr-scale)) rotate(var(--sr-rotate));
+  transition:
+    opacity var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+  will-change: opacity, transform;
+}
+/* Visible */
+.sr.in {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+}
+/* Element has scrolled past (above viewport) → animate up/away */
+.sr.above {
+  opacity: 0;
+  transform: translateY(calc(-1 * var(--sr-dist-y))) translateX(calc(-1 * var(--sr-dist-x))) scale(var(--sr-scale)) rotate(calc(-1 * var(--sr-rotate)));
+}
+
+/* Variants */
+.sr-left  { --sr-dist-x: -44px; --sr-dist-y: 16px; }
+.sr-right { --sr-dist-x: 44px;  --sr-dist-y: 16px; }
+.sr-scale { --sr-scale: .94; --sr-dist-y: 20px; }
+.sr-tilt  { --sr-rotate: -2deg; --sr-dist-y: 28px; }
+.sr-slow  { --dur: 1.05s; }
+.sr-fast  { --dur: 0.52s; }
+
+/* Delays */
+.d1 { transition-delay: .08s; }
+.d2 { transition-delay: .16s; }
+.d3 { transition-delay: .24s; }
+.d4 { transition-delay: .32s; }
+.d5 { transition-delay: .40s; }
+.d6 { transition-delay: .48s; }
+
+/* ═══════════════════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════════════════ */
+.nav {
+  position: fixed; top: 0; left: 0; width: 100%;
+  z-index: 900; padding: 20px 0;
+  transition: padding .5s var(--ease-out), background .5s, box-shadow .5s;
+}
+.nav.stuck {
+  background: rgba(255,248,242,.88);
+  backdrop-filter: blur(22px) saturate(1.4);
+  -webkit-backdrop-filter: blur(22px) saturate(1.4);
+  border-bottom: 1px solid var(--b-soft);
+  box-shadow: 0 4px 32px rgba(75,52,43,.07);
+  padding: 13px 0;
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* Logo */
+.nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.logo-glyph { width: 42px; height: 42px; }
+.logo-words { display: flex; flex-direction: column; line-height: 1.1; }
+.logo-name {
+  font-family: var(--serif); font-size: 1.1rem; font-weight: 500;
+  color: var(--c-brown); letter-spacing: .03em;
+}
+.logo-sub {
+  font-family: var(--sans); font-size: .56rem;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: var(--c-taupe); font-weight: 500;
+}
+
+/* Links */
+.nav-links { display: flex; align-items: center; gap: 30px; }
+.nav-links a {
+  font-size: .72rem; font-weight: 500; letter-spacing: .10em;
+  text-transform: uppercase; color: var(--t-body);
+  transition: color .3s; position: relative; padding: 4px 0;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -2px; left: 0;
+  width: 0; height: 1px; background: var(--c-gold);
+  transition: width .4s var(--ease-out);
+}
+.nav-links a:hover { color: var(--c-brown); }
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+.nav-links a.active { color: var(--c-brown); }
+
+/* Hamburger */
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; padding: 8px; z-index: 910;
+}
+.hamburger span {
+  display: block; width: 23px; height: 1.5px;
+  background: var(--c-brown); transition: .4s var(--ease-out);
+  border-radius: 2px;
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.7px,4.7px); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.7px,-4.7px); }
+
+/* Drawer */
+.drawer {
+  position: fixed; top: 0; right: 0;
+  width: 280px; height: 100vh;
+  background: rgba(255,248,242,.97); backdrop-filter: blur(28px);
+  border-left: 1px solid var(--b-soft);
+  transform: translateX(100%); transition: transform .55s var(--ease-out);
+  z-index: 905; display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 52px 36px; gap: 28px;
+}
+.drawer.open { transform: translateX(0); }
+.drawer a {
+  font-family: var(--serif); font-size: 1.6rem; font-weight: 400;
+  color: var(--c-brown); transition: .3s;
+}
+.drawer a:hover { color: var(--c-gold); transform: translateX(6px); }
+.drawer-overlay {
+  position: fixed; inset: 0; z-index: 904;
+  background: rgba(75,52,43,.25); backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none; transition: opacity .4s;
+}
+.drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+@media (max-width: 900px) {
+  .nav-links, .nav-cta-d { display: none; }
+  .hamburger { display: flex; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════ */
+.hero {
+  position: relative; min-height: 100svh;
+  display: flex; align-items: center;
+  padding: 160px 0 100px; overflow: hidden;
+}
+
+/* Decorative rings */
+.hero-ring {
+  position: absolute; border-radius: 50%;
+  border: 1px solid rgba(200,164,93,.14);
+  pointer-events: none;
+  animation: ring-spin linear infinite;
+}
+.hr1 { width: min(55vw, 760px); height: min(55vw, 760px); top: 5%; right: -8%; animation-duration: 60s; }
+.hr2 { width: min(44vw, 600px); height: min(44vw, 600px); top: 12%; right: -3%; animation-duration: 45s; animation-direction: reverse; }
+.hr3 { width: min(32vw, 420px); height: min(32vw, 420px); top: 22%; right: 3%; animation-duration: 30s; border-style: dashed; border-color: rgba(200,164,93,.08); }
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+
+/* Floating particles */
+.particles { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.particle {
+  position: absolute; border-radius: 50%;
+  background: var(--c-gold); opacity: 0;
+  animation: particle-float linear infinite;
+}
+@keyframes particle-float {
+  0% { opacity: 0; transform: translateY(0) scale(0); }
+  10% { opacity: .5; transform: translateY(-20px) scale(1); }
+  90% { opacity: .3; }
+  100% { opacity: 0; transform: translateY(-120px) scale(.4); }
+}
+
+/* Hero grid */
+.hero-grid {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px; align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .62rem; font-weight: 500; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--c-gold);
+  padding: 8px 18px;
+  border: 1px solid var(--b-gold); border-radius: 100px;
+  background: rgba(200,164,93,.06); margin-bottom: 28px;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  font-weight: 300; line-height: 1.04;
+  letter-spacing: -.025em; color: var(--c-brown);
+  margin-bottom: 28px; text-wrap: balance;
+}
+.hero-title em { font-style: italic; display: block; color: var(--c-brown2); }
+.hero-sub {
+  font-size: clamp(.92rem, 1.3vw, 1.06rem);
+  color: var(--t-body); line-height: 1.88; font-weight: 300;
+  max-width: 540px; margin-bottom: 40px;
+}
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+.hero-seals { display: flex; flex-wrap: wrap; gap: 10px; }
+.seal {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 14px;
+  background: rgba(255,255,255,.65);
+  border: 1px solid var(--b-soft); border-radius: 100px;
+  font-size: .69rem; font-weight: 500; letter-spacing: .03em;
+  color: var(--t-body); backdrop-filter: blur(8px);
+  transition: .35s var(--ease-out);
+}
+.seal:hover { border-color: var(--b-gold); background: rgba(255,255,255,.92); transform: translateY(-1px); }
+/* Seal icons – custom thin marks instead of SVG icons */
+.seal-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--c-gold); flex-shrink: 0;
+}
+
+/* Hero frame */
+.hero-frame {
+  position: relative; width: 100%; max-width: 520px;
+  aspect-ratio: 3/4; border-radius: var(--r-xl);
+  background: linear-gradient(145deg, var(--c-mid) 0%, var(--c-nude) 55%, var(--c-light) 100%);
+  border: 1px solid var(--b-soft);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--sh-warm), inset 0 1px 0 rgba(255,255,255,.7);
+}
+/* Inner border */
+.hero-frame::before {
+  content: ''; position: absolute; inset: 18px;
+  border: 1px solid rgba(200,164,93,.22);
+  border-radius: calc(var(--r-xl) - 8px);
+  pointer-events: none;
+}
+/* Gold top accent */
+.hero-frame::after {
+  content: ''; position: absolute; top: 0; left: 28%; right: 28%;
+  height: 2px; background: linear-gradient(to right, transparent, var(--c-gold), transparent);
+}
+/* Corners */
+.frame-c { position: absolute; width: 20px; height: 20px; }
+.fc-tl { top: 24px; left: 24px; border-top: 1.5px solid var(--c-gold); border-left: 1.5px solid var(--c-gold); border-radius: 3px 0 0 0; }
+.fc-tr { top: 24px; right: 24px; border-top: 1.5px solid var(--c-gold); border-right: 1.5px solid var(--c-gold); border-radius: 0 3px 0 0; }
+.fc-bl { bottom: 24px; left: 24px; border-bottom: 1.5px solid var(--c-gold); border-left: 1.5px solid var(--c-gold); border-radius: 0 0 0 3px; }
+.fc-br { bottom: 24px; right: 24px; border-bottom: 1.5px solid var(--c-gold); border-right: 1.5px solid var(--c-gold); border-radius: 0 0 3px 0; }
+
+.frame-mono { width: 110px; height: 110px; opacity: .22; margin-bottom: 20px; }
+.frame-caption { font-family: var(--serif); font-size: .88rem; font-style: italic; color: var(--c-taupe); opacity: .7; text-align: center; }
+.frame-caption-sub { font-size: .58rem; letter-spacing: .22em; text-transform: uppercase; color: var(--c-taupe); opacity: .5; margin-top: 8px; }
+
+/* Floating accent */
+.hero-accent {
+  position: absolute; bottom: -16px; left: -28px;
+  background: rgba(255,255,255,.94);
+  border: 1px solid var(--b-soft); border-radius: var(--r);
+  padding: 16px 20px; box-shadow: var(--sh-card);
+  backdrop-filter: blur(12px); min-width: 190px;
+}
+.accent-pill { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.accent-live {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--c-gold);
+  animation: live-pulse 2s ease-in-out infinite;
+}
+@keyframes live-pulse {
+  0%,100%{ box-shadow: 0 0 0 0 rgba(200,164,93,.5); transform: scale(1); }
+  50%{ box-shadow: 0 0 0 6px rgba(200,164,93,0); transform: scale(1.15); }
+}
+.accent-label { font-size: .62rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--c-gold); }
+.accent-text { font-family: var(--serif); font-size: 1rem; color: var(--c-brown); }
+.accent-sub { font-size: .66rem; color: var(--t-muted); margin-top: 2px; }
+
+/* Hero responsive */
+@media (max-width: 1100px) {
+  .hero-grid { gap: 48px; }
+  .hero-frame { max-width: 420px; }
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-sub { margin: 0 auto 38px; }
+  .hero-btns, .hero-seals { justify-content: center; }
+  .hero-frame { max-width: 340px; margin: 0 auto; }
+  .hr1, .hr2, .hr3 { display: none; }
+  .hero-accent { left: -10px; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION SHARED
+═══════════════════════════════════════════════════════ */
+.section { padding: 112px 0; position: relative; }
+
+/* section separator lines */
+.section::before {
+  content: ''; position: absolute; top: 0; left: 10%; right: 10%;
+  height: 1px; background: linear-gradient(to right, transparent, var(--b-soft), transparent);
+}
+
+/* glass card */
+.glass-card {
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-card);
+}
+.glass-card:hover { box-shadow: var(--sh-hover); }
+
+/* ═══════════════════════════════════════════════════════
+   IDENTIFY SECTION
+═══════════════════════════════════════════════════════ */
+.identify-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+
+.pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 28px; }
+.pain-pill {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 16px;
+  background: rgba(255,255,255,.60);
+  border: 1px solid var(--b-soft); border-radius: 100px;
+  font-size: .80rem; color: var(--t-body); font-weight: 400;
+  transition: .35s var(--ease-out); cursor: default;
+}
+/* Custom hand-drawn-feeling mark instead of SVG icon */
+.pain-mark {
+  width: 5px; height: 5px; border-radius: 1px;
+  background: var(--c-gold); flex-shrink: 0;
+  transform: rotate(45deg);
+}
+.pain-pill:hover { background: rgba(255,255,255,.9); border-color: var(--b-gold); transform: translateX(4px); color: var(--c-brown); }
+
+/* Dark quote block */
+.quote-block {
+  position: relative;
+  padding: 44px;
+  background: linear-gradient(145deg, var(--c-brown) 0%, var(--c-brown2) 100%);
+  border-radius: var(--r-xl); overflow: hidden;
+}
+.quote-block::before {
+  content: '\201C';
+  position: absolute; top: -14px; left: 28px;
+  font-family: var(--serif); font-size: 11rem; font-weight: 300;
+  color: rgba(255,255,255,.04); line-height: 1; pointer-events: none;
+}
+.quote-block::after {
+  content: '';
+  position: absolute; bottom: -60px; right: -60px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(200,164,93,.12) 0%, transparent 70%);
+}
+.quote-block blockquote {
+  font-family: var(--serif); font-size: clamp(1.3rem,2.5vw,1.85rem);
+  font-weight: 300; font-style: italic;
+  color: rgba(255,249,243,.93); line-height: 1.45;
+  position: relative; z-index: 1; margin-bottom: 26px;
+}
+.quote-cite {
+  display: flex; align-items: center; gap: 12px;
+  font-size: .63rem; letter-spacing: .20em; text-transform: uppercase;
+  color: rgba(200,164,93,.75); position: relative; z-index: 1;
+}
+.quote-cite::before { content: ''; width: 32px; height: 1px; background: var(--c-gold); opacity: .6; }
+
+@media (max-width: 768px) {
+  .identify-layout { grid-template-columns: 1fr; gap: 48px; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .quote-block { padding: 32px 28px; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   PHILOSOPHY SECTION
+═══════════════════════════════════════════════════════ */
+.philosophy-text {
+  max-width: 800px; margin: 0 auto 64px;
+  font-size: clamp(.94rem,1.3vw,1.08rem);
+  color: var(--t-body); line-height: 1.92; font-weight: 300;
+  text-align: center;
+}
+.phil-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 22px;
+}
+.phil-card {
+  padding: 38px 32px;
+  transition: transform .45s var(--ease-out), box-shadow .45s var(--ease-out), border-color .3s;
+}
+.phil-card:hover { transform: translateY(-6px); box-shadow: var(--sh-hover); border-color: var(--b-gold); }
+/* Custom number mark */
+.phil-n {
+  font-family: var(--serif);
+  font-size: 3.5rem; font-weight: 300;
+  color: rgba(200,164,93,.2); line-height: 1;
+  margin-bottom: 16px; letter-spacing: -.03em;
+}
+.phil-card h4 { font-family: var(--serif); font-size: 1.12rem; font-weight: 500; color: var(--c-brown); margin-bottom: 10px; }
+.phil-card p { font-size: .88rem; color: var(--t-muted); line-height: 1.76; font-weight: 300; }
+@media (max-width: 1000px) { .phil-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 580px) { .phil-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════════
+   PROCEDURES
+═══════════════════════════════════════════════════════ */
+.proc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.proc-row2 { display: flex; gap: 24px; margin-top: 24px; }
+.proc-row2 .proc-card { flex: 1; }
+.proc-card {
+  padding: 44px 36px; position: relative; overflow: hidden;
+  transition: transform .5s var(--ease-out), box-shadow .5s, border-color .3s;
+}
+.proc-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: linear-gradient(to right, transparent, var(--c-gold), transparent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .6s var(--ease-out);
+}
+.proc-card::after {
+  content: ''; position: absolute; bottom: -50px; right: -50px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,164,93,.07) 0%, transparent 70%);
+  transition: transform .6s var(--ease-out);
+}
+.proc-card:hover { transform: translateY(-7px); box-shadow: var(--sh-hover); border-color: var(--b-gold); }
+.proc-card:hover::before { transform: scaleX(1); }
+.proc-card:hover::after { transform: scale(1.8); }
+
+/* Custom proc number */
+.proc-n {
+  font-family: var(--serif); font-size: 4.5rem; font-weight: 300;
+  color: rgba(200,164,93,.14); line-height: 1;
+  letter-spacing: -.05em; margin-bottom: 16px;
+}
+/* Thin diamond bullet instead of icon */
+.proc-bullet {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+}
+.proc-diamond {
+  width: 9px; height: 9px;
+  background: var(--c-gold);
+  clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+  flex-shrink: 0;
+}
+.proc-line { flex: 1; height: 1px; background: var(--b-gold); max-width: 56px; }
+.proc-card h3 { font-family: var(--serif); font-size: 1.28rem; font-weight: 500; color: var(--c-brown); margin-bottom: 12px; line-height: 1.28; }
+.proc-card p { font-size: .88rem; color: var(--t-muted); line-height: 1.80; font-weight: 300; }
+
+@media (max-width: 1000px) {
+  .proc-grid { grid-template-columns: 1fr 1fr; }
+  .proc-row2 { flex-direction: column; }
+  .proc-row2 .proc-card { width: 100%; }
+}
+@media (max-width: 580px) { .proc-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════════
+   JOURNEY / TIMELINE (dark section)
+═══════════════════════════════════════════════════════ */
+.journey-wrap {
+  background: var(--c-brown);
+  position: relative; overflow: hidden;
+  padding: 112px 0;
+}
+.journey-wrap::before, .journey-wrap::after { background: transparent; }
+.journey-deco1 {
+  position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,164,93,.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.journey-deco2 {
+  position: absolute; bottom: -150px; left: -150px;
+  width: 450px; height: 450px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,164,93,.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.journey-wrap .eyebrow { color: var(--c-gold); }
+.journey-wrap .eyebrow::before, .journey-wrap .eyebrow::after { background: var(--c-gold); }
+.journey-wrap .h-section { color: rgba(255,249,243,.95); }
+
+.timeline { position: relative; max-width: 860px; margin-top: 64px; }
+/* The animated vertical line */
+.timeline-track {
+  position: absolute; left: 22px; top: 22px; bottom: 22px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--c-gold) 0%, rgba(200,164,93,.15) 100%);
+  transform-origin: top; transform: scaleY(0);
+  transition: transform 1.4s var(--ease-out);
+}
+.timeline-track.grown { transform: scaleY(1); }
+
+.tl-item {
+  display: grid; grid-template-columns: 44px 1fr;
+  gap: 28px; margin-bottom: 48px; align-items: flex-start; position: relative;
+}
+.tl-item:last-child { margin-bottom: 0; }
+.tl-node {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(200,164,93,.1); border: 1px solid rgba(200,164,93,.3);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; position: relative; z-index: 1;
+  transition: .45s var(--ease-out);
+}
+.tl-item:hover .tl-node { background: rgba(200,164,93,.2); border-color: var(--c-gold); box-shadow: 0 0 24px rgba(200,164,93,.22); }
+.tl-n { font-family: var(--serif); font-size: .95rem; font-weight: 400; color: var(--c-gold); }
+.tl-body { padding-top: 12px; }
+.tl-title { font-family: var(--serif); font-size: 1.18rem; font-weight: 500; color: rgba(255,249,243,.95); margin-bottom: 6px; line-height: 1.25; }
+.tl-desc { font-size: .86rem; color: rgba(255,249,243,.48); line-height: 1.82; font-weight: 300; }
+
+.journey-cta { margin-top: 56px; padding-top: 44px; border-top: 1px solid rgba(200,164,93,.16); display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.journey-cta-q { font-family: var(--serif); font-size: 1.25rem; color: rgba(255,249,243,.72); font-weight: 300; font-style: italic; }
+
+@media (max-width: 768px) {
+  .tl-item { grid-template-columns: 36px 1fr; gap: 16px; }
+  .tl-node { width: 36px; height: 36px; }
+  .timeline-track { left: 17px; }
+  .journey-cta { flex-direction: column; align-items: flex-start; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════════════════════ */
+.about-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 100px; align-items: center; }
+
+.about-frame {
+  position: relative;
+  aspect-ratio: 4/5; border-radius: var(--r-xl);
+  background: linear-gradient(145deg, var(--c-nude) 0%, var(--c-mid) 45%, var(--c-light) 100%);
+  border: 1px solid var(--b-soft);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  overflow: hidden; box-shadow: var(--sh-warm);
+}
+.about-frame::before {
+  content: ''; position: absolute; inset: 20px;
+  border: 1px solid rgba(200,164,93,.2);
+  border-radius: calc(var(--r-xl) - 8px); pointer-events: none;
+}
+.about-frame-mono { width: 90px; height: 90px; opacity: .18; margin-bottom: 18px; }
+.about-frame-lbl { font-family: var(--serif); font-size: .85rem; font-style: italic; color: var(--c-brown2); opacity: .55; text-align: center; }
+.about-frame-sub { font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: var(--c-taupe); opacity: .5; margin-top: 7px; }
+
+.about-badge {
+  position: absolute; bottom: 28px; right: -32px;
+  background: rgba(255,255,255,.96); border: 1px solid var(--b-soft);
+  border-radius: var(--r); padding: 18px 22px;
+  box-shadow: var(--sh-card); min-width: 185px;
+}
+.badge-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+/* Thin cross mark */
+.badge-cross {
+  width: 16px; height: 16px; position: relative; flex-shrink: 0;
+}
+.badge-cross::before, .badge-cross::after {
+  content: ''; position: absolute;
+  background: var(--c-gold); border-radius: 1px;
+}
+.badge-cross::before { width: 1px; height: 14px; top: 1px; left: 7.5px; }
+.badge-cross::after { width: 14px; height: 1px; top: 7.5px; left: 1px; }
+.badge-title { font-family: var(--serif); font-size: .95rem; color: var(--c-brown); font-weight: 500; }
+.badge-text { font-size: .70rem; color: var(--t-muted); line-height: 1.55; }
+
+.about-desc { font-size: clamp(.88rem,1.4vw,1rem); color: var(--t-body); line-height: 1.9; font-weight: 300; margin-bottom: 14px; }
+.about-vals { display: flex; flex-direction: column; gap: 10px; margin: 30px 0; }
+.about-val {
+  display: flex; align-items: center; gap: 12px;
+  font-size: .85rem; color: var(--t-body); font-weight: 400;
+}
+/* Custom tick mark */
+.val-tick {
+  width: 18px; height: 18px; flex-shrink: 0; position: relative;
+}
+.val-tick::before { content: ''; position: absolute; bottom: 3px; left: 2px; width: 6px; height: 1.5px; background: var(--c-gold); transform: rotate(45deg); }
+.val-tick::after { content: ''; position: absolute; bottom: 5px; left: 5px; width: 10px; height: 1.5px; background: var(--c-gold); transform: rotate(-45deg); }
+.about-phrase {
+  padding: 22px 26px; border-left: 2px solid var(--c-gold);
+  background: rgba(255,255,255,.6); border-radius: 0 var(--r) var(--r) 0;
+  font-family: var(--serif); font-size: 1.12rem; font-style: italic;
+  color: var(--c-brown); margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .about-layout { grid-template-columns: 1fr; gap: 48px; }
+  .about-frame { max-width: 320px; margin: 0 auto; }
+  .about-badge { right: -10px; bottom: 20px; min-width: 165px; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   DIFFERENTIALS
+═══════════════════════════════════════════════════════ */
+.diff-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 56px; }
+.diff-card {
+  padding: 42px 34px; position: relative; overflow: hidden;
+  transition: transform .45s var(--ease-out), box-shadow .45s, border-color .3s;
+}
+.diff-card::after {
+  content: ''; position: absolute; bottom: 0; right: 0;
+  width: 70px; height: 70px;
+  background: radial-gradient(circle, var(--g-gold) 0%, transparent 70%);
+  transition: transform .5s var(--ease-out);
+}
+.diff-card:hover { transform: translateY(-5px); box-shadow: var(--sh-hover); border-color: var(--b-gold); }
+.diff-card:hover::after { transform: scale(2.2); }
+/* Roman numeral style number */
+.diff-n {
+  font-family: var(--serif); font-size: 3.2rem; font-weight: 300;
+  color: rgba(200,164,93,.18); line-height: 1; letter-spacing: -.02em; margin-bottom: 16px;
+}
+.diff-card h3 { font-family: var(--serif); font-size: 1.18rem; font-weight: 500; color: var(--c-brown); margin-bottom: 10px; }
+.diff-card p { font-size: .88rem; color: var(--t-muted); line-height: 1.78; font-weight: 300; }
+@media (max-width: 1000px) { .diff-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 580px) { .diff-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════════
+   TRANSFORMATION (dark-mid section)
+═══════════════════════════════════════════════════════ */
+.transform-wrap {
+  background: var(--c-brown2);
+  padding: 112px 0; position: relative; overflow: hidden; text-align: center;
+}
+.transform-wrap::before, .transform-wrap::after { background: transparent; }
+.transform-wrap::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 30% 50%, rgba(200,164,93,.07) 0%, transparent 60%), radial-gradient(ellipse 60% 60% at 80% 50%, rgba(200,164,93,.05) 0%, transparent 60%); pointer-events: none; }
+
+.transform-wrap .eyebrow { color: rgba(200,164,93,.9); }
+.transform-wrap .eyebrow::before, .transform-wrap .eyebrow::after { background: var(--c-gold2); }
+.transform-wrap .h-section { color: rgba(255,249,243,.95); }
+
+.transform-phrase {
+  font-family: var(--serif); font-size: clamp(1.5rem,3.2vw,2.8rem);
+  font-weight: 300; font-style: italic;
+  color: rgba(255,249,243,.85); line-height: 1.35;
+  max-width: 640px; margin: 0 auto 48px;
+}
+.transform-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 16px; max-width: 100%; margin: 0 auto;
+}
+.tf-item {
+  padding: 22px 18px;
+  background: rgba(255,249,243,.05);
+  border: 1px solid rgba(200,164,93,.18);
+  border-radius: var(--r);
+  transition: .4s var(--ease-out);
+}
+.tf-item:hover { background: rgba(255,249,243,.08); border-color: rgba(200,164,93,.38); transform: translateY(-3px); }
+/* Fleuron-style mark */
+.tf-mark {
+  width: 16px; height: 16px; margin: 0 auto 10px;
+  background: var(--c-gold); opacity: .7;
+  clip-path: polygon(50% 0%,53% 47%,100% 50%,53% 53%,50% 100%,47% 53%,0% 50%,47% 47%);
+}
+.tf-item p { font-size: .80rem; color: rgba(255,249,243,.62); font-weight: 300; line-height: 1.5; }
+@media (max-width: 580px) { .transform-grid { grid-template-columns: 1fr 1fr; } }
+
+/* ═══════════════════════════════════════════════════════
+   OBJECTIONS
+═══════════════════════════════════════════════════════ */
+.obj-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.obj-text { font-size: clamp(.92rem,1.3vw,1.05rem); color: var(--t-body); line-height: 1.9; font-weight: 300; margin-bottom: 28px; }
+.obj-chips { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 34px; }
+.obj-chip {
+  padding: 9px 18px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid var(--b-soft); border-radius: 100px;
+  font-size: .78rem; color: var(--t-body);
+  transition: .35s var(--ease-out);
+}
+.obj-chip:hover { border-color: var(--b-gold); background: rgba(200,164,93,.07); color: var(--c-brown); }
+.obj-panel {
+  padding: 44px;
+  background: linear-gradient(145deg, var(--c-light) 0%, var(--c-nude) 100%);
+  border-radius: var(--r-xl); border: 1px solid var(--b-soft); text-align: center;
+}
+.obj-panel-mono { width: 72px; height: 72px; margin: 0 auto 22px; opacity: .3; }
+.obj-panel h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; color: var(--c-brown); margin-bottom: 12px; font-style: italic; }
+.obj-panel p { font-size: .85rem; color: var(--t-muted); line-height: 1.78; font-weight: 300; margin-bottom: 26px; }
+@media (max-width: 768px) { .obj-layout { grid-template-columns: 1fr; gap: 48px; } .obj-panel { padding: 32px 24px; } }
+
+/* ═══════════════════════════════════════════════════════
+   CTA BAND
+═══════════════════════════════════════════════════════ */
+.cta-band {
+  padding: 96px 0; text-align: center;
+  background: linear-gradient(135deg, var(--c-nude) 0%, var(--c-mid) 50%, var(--c-nude) 100%);
+  position: relative; overflow: hidden;
+}
+.cta-band::before { content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(to right,transparent,rgba(200,164,93,.5),transparent); }
+.cta-band::after { content: ''; position: absolute; bottom: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(to right,transparent,rgba(200,164,93,.5),transparent); }
+.cta-band h2 { font-family: var(--serif); font-size: clamp(1.8rem,3.2vw,3rem); font-weight: 300; color: var(--c-brown); line-height: 1.18; margin-bottom: 16px; text-wrap: balance; max-width: 680px; margin-left: auto; margin-right: auto; }
+.cta-band p { font-size: clamp(.92rem,1.3vw,1.05rem); color: var(--t-body); line-height: 1.82; font-weight: 300; max-width: 520px; margin: 0 auto 32px; }
+
+/* ═══════════════════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════════════════ */
+.faq-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 100px; align-items: flex-start; }
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+.faq-item {
+  border: 1px solid var(--b-soft); border-radius: var(--r);
+  background: rgba(255,255,255,.60); overflow: hidden;
+  transition: border-color .3s;
+}
+.faq-item.open { border-color: var(--b-gold); background: rgba(255,255,255,.88); }
+.faq-btn {
+  width: 100%; display: flex; align-items: center;
+  justify-content: space-between; gap: 12px;
+  padding: 18px 22px; background: none; border: none;
+  color: var(--c-brown); font-family: var(--sans);
+  font-size: .88rem; font-weight: 500; text-align: left;
+  cursor: pointer; transition: color .3s;
+}
+.faq-btn:hover { color: var(--c-gold); }
+.faq-item.open .faq-btn { color: var(--c-brown); }
+/* Custom +/× toggle */
+.faq-tog {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1px solid var(--b-soft); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: .35s var(--ease-out); position: relative;
+}
+.faq-item.open .faq-tog { background: var(--c-gold); border-color: var(--c-gold); }
+.faq-tog::before, .faq-tog::after {
+  content: ''; position: absolute;
+  background: var(--c-taupe); border-radius: 1px;
+  transition: .35s var(--ease-out);
+}
+.faq-tog::before { width: 9px; height: 1px; }
+.faq-tog::after { width: 1px; height: 9px; }
+.faq-item.open .faq-tog::before, .faq-item.open .faq-tog::after { background: var(--c-brown); }
+.faq-item.open .faq-tog::after { transform: rotate(90deg); opacity: 0; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease-out); }
+.faq-inner { padding: 0 22px 18px; font-size: .84rem; color: var(--t-muted); line-height: 1.82; font-weight: 300; }
+@media (max-width: 768px) { .faq-layout { grid-template-columns: 1fr; gap: 40px; } }
+
+/* ═══════════════════════════════════════════════════════
+   CTA FINAL
+═══════════════════════════════════════════════════════ */
+.cta-final {
+  background: var(--c-brown); padding: 128px 0;
+  text-align: center; position: relative; overflow: hidden;
+}
+.cta-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 70% at 50% 60%, rgba(200,164,93,.07) 0%, transparent 65%); pointer-events: none; }
+.cta-final .eyebrow { color: var(--c-gold); }
+.cta-final .eyebrow::before, .cta-final .eyebrow::after { background: var(--c-gold); }
+.cta-final-mono { width: 88px; height: 88px; margin: 0 auto 38px; opacity: .22; }
+.cta-final-h {
+  font-family: var(--serif); font-size: clamp(2rem,4.5vw,3.8rem);
+  font-weight: 300; color: rgba(255,249,243,.95);
+  line-height: 1.14; max-width: 780px; margin: 0 auto 20px; text-wrap: balance;
+}
+.cta-final-sub {
+  font-size: clamp(.92rem,1.3vw,1.06rem); color: rgba(255,249,243,.48);
+  line-height: 1.88; font-weight: 300; max-width: 560px; margin: 0 auto 40px;
+}
+.cta-final-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 44px; }
+.cta-final-phrase {
+  font-family: var(--serif); font-size: 1rem; font-style: italic;
+  color: rgba(200,164,93,.55); letter-spacing: .04em;
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════ */
+.footer { background: #2B1A14; padding: 80px 0 32px; position: relative; }
+.footer::before { content: ''; position: absolute; top: 0; left: 5%; right: 5%; height: 1px; background: linear-gradient(to right, transparent, rgba(200,164,93,.35), transparent); }
+.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 64px; margin-bottom: 56px; }
+.f-brand-logo { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
+.f-logo-glyph { width: 36px; height: 36px; opacity: .8; }
+.f-brand-name { font-family: var(--serif); font-size: 1.05rem; color: rgba(255,249,243,.9); }
+.f-brand-sub { font-size: .55rem; letter-spacing: .20em; text-transform: uppercase; color: rgba(200,164,93,.65); }
+.f-desc { font-size: .82rem; color: rgba(255,249,243,.35); line-height: 1.75; font-weight: 300; margin-bottom: 20px; max-width: 250px; }
+.f-socials { display: flex; gap: 10px; }
+.f-social { width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(200,164,93,.2); display: flex; align-items: center; justify-content: center; color: rgba(255,249,243,.35); transition: .35s; }
+.f-social:hover { border-color: var(--c-gold); color: var(--c-gold); transform: translateY(-2px); }
+.f-col h4 { font-size: .60rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: rgba(200,164,93,.7); margin-bottom: 16px; }
+.f-col ul { display: flex; flex-direction: column; gap: 9px; }
+.f-col li a, .f-col li span { font-size: .82rem; color: rgba(255,249,243,.35); transition: .3s; font-weight: 300; }
+.f-col li a:hover { color: rgba(255,249,243,.8); }
+.f-contact { display: flex; align-items: flex-start; gap: 9px; font-size: .82rem; color: rgba(255,249,243,.35); margin-bottom: 9px; font-weight: 300; }
+.f-contact-dot { width: 5px; height: 5px; border-radius: 1px; background: var(--c-gold); transform: rotate(45deg); flex-shrink: 0; margin-top: 7px; opacity: .65; }
+.f-contact a { color: rgba(255,249,243,.48); transition: .3s; }
+.f-contact a:hover { color: rgba(255,249,243,.88); }
+.footer-bottom { border-top: 1px solid rgba(200,164,93,.1); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-bottom p { font-size: .72rem; color: rgba(255,249,243,.2); font-weight: 300; }
+.footer-phrase { font-family: var(--serif); font-size: .78rem; font-style: italic; color: rgba(200,164,93,.35); }
+@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 36px; } .f-desc { max-width: none; } }
+
+/* ═══════════════════════════════════════════════════════
+   FLOATING WA (mobile)
+═══════════════════════════════════════════════════════ */
+.wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 850; display: none; }
+.wa-float-btn {
+  display: flex; align-items: center; gap: 9px;
+  padding: 13px 22px; background: #25D366; color: #fff;
+  border: none; border-radius: 100px;
+  font-family: var(--sans); font-size: .78rem; font-weight: 500; letter-spacing: .07em;
+  cursor: pointer; text-decoration: none;
+  box-shadow: 0 4px 24px rgba(37,211,102,.38); transition: .4s var(--ease-out);
+}
+.wa-float-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(37,211,102,.5); }
+@media (max-width: 768px) { .wa-float { display: block; } }
+
+/* ═══════════════════════════════════════════════════════
+   PROGRESS + BACK-TOP
+═══════════════════════════════════════════════════════ */
+.prog { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(to right, var(--c-gold), var(--c-gold2)); width: 0; z-index: 999; transition: width .1s linear; }
+.back-top {
+  position: fixed; bottom: 78px; right: 22px; z-index: 849;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,.88); border: 1px solid var(--b-soft);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--c-brown); cursor: pointer; box-shadow: var(--sh-card);
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .4s, transform .4s, box-shadow .4s, border-color .3s;
+}
+.back-top.up { opacity: 1; transform: translateY(0); }
+.back-top:hover { border-color: var(--c-gold); box-shadow: var(--sh-hover); transform: translateY(-3px) !important; }
+/* Up arrow via CSS */
+.back-top::before {
+  content: ''; width: 8px; height: 8px;
+  border-top: 1.5px solid var(--c-brown); border-right: 1.5px solid var(--c-brown);
+  transform: rotate(-45deg) translate(1px, 2px);
+}
+</style>
+</head>
+<body>
+
+<!-- MESH BACKGROUND -->
+<div class="mesh-bg" aria-hidden="true">
+  <div class="mesh-blob mb1"></div>
+  <div class="mesh-blob mb2"></div>
+  <div class="mesh-blob mb3"></div>
+  <div class="mesh-blob mb4"></div>
+</div>
+
+<!-- PROGRESS -->
+<div class="prog" id="prog"></div>
+
+<!-- ════════════ NAVBAR ════════════ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo" aria-label="Início">
+        <!-- GV Monogram SVG (custom, hand-crafted feel) -->
+        <svg class="logo-glyph" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="21" cy="21" r="20" stroke="#C8A45D" stroke-width=".6" stroke-opacity=".55"/>
+          <!-- G letterform -->
+          <path d="M9.5 21c0-5.5 3.8-9.5 9-9.5 3.5 0 6 1.8 7.2 3.5v4.5h-5v-2.5c-.5-1-1.6-1.7-2.8-1.7-2.8 0-4.6 2.4-4.6 5.7 0 3.3 1.8 5.7 4.6 5.7 2 0 3.5-1.1 4-3H17v-3h7.7v2.5c-.6 3.8-3.8 6.8-7.8 6.8-5.2 0-7.4-4.2-7.4-9z" fill="#C8A45D" fill-opacity=".9"/>
+          <!-- V letterform -->
+          <path d="M24.5 11.5h3.2l3 11.2 3-11.2h3.3L32.8 30.5h-3.5L24.5 11.5z" fill="#4B342B" fill-opacity=".85"/>
+          <!-- 4-point star -->
+          <path d="M21 4.5L21.6 7 24 7.5 21.6 8 21 10.5 20.4 8 18 7.5 20.4 7Z" fill="#C8A45D" opacity=".88"/>
+        </svg>
+        <div class="logo-words">
+          <span class="logo-name">Gizelly Viana</span>
+          <span class="logo-sub">Harmonização Facial</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-line nav-cta-d">Agendar avaliação</a>
+
+      <button class="hamburger" id="ham" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="drawer-overlay" id="dOv"></div>
+<div class="drawer" id="drawer" role="dialog" aria-label="Menu">
+  <a href="#inicio"        class="dl">Início</a>
+  <a href="#procedimentos" class="dl">Procedimentos</a>
+  <a href="#como-funciona" class="dl">Como funciona</a>
+  <a href="#sobre"         class="dl">Sobre</a>
+  <a href="#diferenciais"  class="dl">Diferenciais</a>
+  <a href="#faq"           class="dl">FAQ</a>
+  <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:12px">Agendar</a>
+</div>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="hero" id="inicio">
+  <!-- Rings -->
+  <div class="hero-ring hr1" aria-hidden="true"></div>
+  <div class="hero-ring hr2" aria-hidden="true"></div>
+  <div class="hero-ring hr3" aria-hidden="true"></div>
+  <!-- Particles -->
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-content">
+        <div class="hero-eyebrow sr sr-fast">
+          <span style="width:6px;height:6px;background:var(--c-gold);clip-path:polygon(50% 0%,53% 47%,100% 50%,53% 53%,50% 100%,47% 53%,0% 50%,47% 47%);display:inline-block;flex-shrink:0"></span>
+          Harmonização Facial · Estética com Responsabilidade
+        </div>
+        <h1 class="hero-title sr d1">
+          A beleza mora<br><em>nos detalhes.</em>
+        </h1>
+        <p class="hero-sub sr d2">
+          Procedimentos estéticos realizados com técnica, cuidado e responsabilidade para valorizar sua beleza natural, melhorar sua autoestima e cuidar do seu envelhecimento com elegância.
+        </p>
+        <div class="hero-btns sr d3">
+          <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-hero-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.12 1.524 5.849L.057 23.457a.75.75 0 00.93.931l5.608-1.467A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.975 9.975 0 01-5.14-1.425l-.37-.22-3.33.871.885-3.24-.24-.376A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Agendar avaliação
+          </a>
+          <a href="#procedimentos" class="btn btn-line" id="cta-hero-proc">Conhecer procedimentos</a>
+        </div>
+        <div class="hero-seals sr d4">
+          <span class="seal"><span class="seal-dot"></span>Técnica com responsabilidade</span>
+          <span class="seal"><span class="seal-dot"></span>Beleza natural</span>
+          <span class="seal"><span class="seal-dot"></span>Atendimento humanizado</span>
+          <span class="seal"><span class="seal-dot"></span>Zelo em cada detalhe</span>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div style="display:flex;justify-content:center;align-items:center" class="sr sr-right d2 sr-slow">
+        <div class="hero-frame">
+          <div class="frame-c fc-tl"></div>
+          <div class="frame-c fc-tr"></div>
+          <div class="frame-c fc-bl"></div>
+          <div class="frame-c fc-br"></div>
+          <svg class="frame-mono" viewBox="0 0 110 110" fill="none">
+            <circle cx="55" cy="55" r="52" stroke="#C8A45D" stroke-width=".8"/>
+            <circle cx="55" cy="55" r="46" stroke="#C8A45D" stroke-width=".4" stroke-dasharray="2 5"/>
+            <path d="M20 55c0-13 9-22 22-22s18 8 18 8v10H49v-6s-2-3.5-7-3.5c-5 0-10 4.5-10 11.5s5 11.5 10 11.5c4.5 0 8-2.8 9-7H41V48H61v7c-1 10-9.5 18-19 18-13 0-22-8-22-18z" fill="#C8A45D" fill-opacity=".85"/>
+            <path d="M63 33h9l7.5 28 7.5-28H97L83.5 77H74.5L63 33z" fill="#4B342B" fill-opacity=".75"/>
+            <path d="M55 14L56.4 19 61 20.5 56.4 22 55 27 53.6 22 49 20.5 53.6 19Z" fill="#C8A45D"/>
+          </svg>
+          <p class="frame-caption">Foto profissional em breve</p>
+          <p class="frame-caption-sub">Gizelly Viana</p>
+        </div>
+        <!-- Floating card -->
+        <div class="hero-accent">
+          <div class="accent-pill">
+            <div class="accent-live"></div>
+            <span class="accent-label">Atendimento</span>
+          </div>
+          <div class="accent-text">Rio Pardo de Minas, MG</div>
+          <div class="accent-sub">Agende pelo WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ IDENTIFICAÇÃO ════════════ -->
+<section class="section" id="identificacao">
+  <div class="container">
+    <div class="identify-layout">
+      <div>
+        <div class="eyebrow sr">Você se identifica?</div>
+        <h2 class="h-section sr d1">Você quer se cuidar, mas sem perder sua <em>naturalidade.</em></h2>
+        <p class="body-text sr d2" style="margin-top:6px">Muitas mulheres desejam suavizar sinais do tempo, melhorar a firmeza da pele e se sentir melhor ao olhar no espelho, mas têm receio de resultados artificiais ou exagerados. Aqui, cada detalhe é pensado com responsabilidade, transparência e respeito à sua beleza.</p>
+        <div class="pain-grid sr d3">
+          <div class="pain-pill"><span class="pain-mark"></span>Medo de envelhecer</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Autoestima baixa</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Rugas e linhas de expressão</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Perda de firmeza da pele</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Receio de resultado artificial</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Dúvida se o investimento compensa</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Medo de não conseguir manter</div>
+          <div class="pain-pill"><span class="pain-mark"></span>Desejo de envelhecer bem</div>
+        </div>
+      </div>
+      <div class="quote-block sr sr-right d1 sr-slow">
+        <blockquote>"Cada rosto carrega uma história. Meu trabalho é honrá-la, nunca apagá-la."</blockquote>
+        <div class="quote-cite">Gizelly Viana · Harmonização Facial</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FILOSOFIA ════════════ -->
+<section class="section" id="filosofia" style="text-align:center">
+  <div class="container">
+    <div class="eyebrow sr" style="justify-content:center">Propósito</div>
+    <h2 class="h-section sr d1" style="text-align:center;max-width:640px;margin:0 auto 16px">Estética facial com cuidado, técnica e <em>propósito.</em></h2>
+    <div class="orn sr d2">
+      <div class="orn-line"></div>
+      <div class="orn-spark"></div>
+      <div class="orn-line rev"></div>
+    </div>
+    <p class="philosophy-text sr d3">A proposta não é mudar quem você é. É realçar o que já existe de bonito em você, respeitando seus traços, sua história e seus objetivos. Cada procedimento é conduzido com planejamento, responsabilidade e olhar atento aos detalhes.</p>
+    <div class="phil-grid">
+      <div class="phil-card glass-card sr d1"><div class="phil-n">01</div><h4>Atendimento sincero</h4><p>Orientação clara sobre o que faz sentido para cada caso, sem pressão ou promessas exageradas.</p></div>
+      <div class="phil-card glass-card sr d2"><div class="phil-n">02</div><h4>Planejamento individualizado</h4><p>Cada rosto é analisado de forma única, considerando traços, necessidades e possibilidades reais.</p></div>
+      <div class="phil-card glass-card sr d3"><div class="phil-n">03</div><h4>Cuidado antes, durante e depois</h4><p>O acompanhamento não termina no procedimento. Você recebe orientações para viver a experiência com segurança.</p></div>
+      <div class="phil-card glass-card sr d2"><div class="phil-n">04</div><h4>Procedimentos com responsabilidade</h4><p>Técnica aprimorada, materiais seguros e postura ética em cada atendimento.</p></div>
+      <div class="phil-card glass-card sr d3"><div class="phil-n">05</div><h4>Resultado pensado para você</h4><p>O objetivo é realçar sua beleza natural, nunca transformar sua identidade.</p></div>
+      <div class="phil-card glass-card sr d4"><div class="phil-n">06</div><h4>Beleza com coerência</h4><p>Propósito, transparência e honestidade guiam cada decisão estética.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ PROCEDIMENTOS ════════════ -->
+<section class="section" id="procedimentos">
+  <div class="container">
+    <div class="sr" style="margin-bottom:56px">
+      <div class="eyebrow">Procedimentos</div>
+      <h2 class="h-section">Para valorizar sua beleza<br>com <em>naturalidade.</em></h2>
+      <p class="body-text" style="margin-top:10px;max-width:500px">Cada procedimento é escolhido com critério, planejamento e respeito aos seus traços e objetivos.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-card glass-card sr d1">
+        <div class="proc-n">01</div>
+        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
+        <h3>Toxina Botulínica<br>Botox</h3>
+        <p>Ajuda a suavizar linhas de expressão e prevenir marcas mais profundas, preservando a naturalidade do rosto com segurança e critério.</p>
+      </div>
+      <div class="proc-card glass-card sr d2">
+        <div class="proc-n">02</div>
+        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
+        <h3>Bioestimuladores<br>de Colágeno</h3>
+        <p>Estimulam a produção de colágeno natural, contribuindo para firmeza, qualidade da pele e envelhecimento mais saudável.</p>
+      </div>
+      <div class="proc-card glass-card sr d3">
+        <div class="proc-n">03</div>
+        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
+        <h3>Preenchimento<br>Facial</h3>
+        <p>Indicado para reposição de volume, contorno e equilíbrio facial, sempre com planejamento cuidadoso e respeito à anatomia.</p>
+      </div>
+    </div>
+    <div class="proc-row2">
+      <div class="proc-card glass-card sr d2">
+        <div class="proc-n">04</div>
+        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
+        <h3>Harmonização<br>Facial</h3>
+        <p>Avaliação do conjunto do rosto para propor estratégias que valorizem os traços de forma elegante, equilibrada e natural.</p>
+      </div>
+      <div class="proc-card glass-card sr d3">
+        <div class="proc-n">05</div>
+        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
+        <h3>Planejamento Estético<br>Individualizado</h3>
+        <p>Cada rosto é único. Por isso, o cuidado começa com uma análise detalhada das suas necessidades, expectativas e possibilidades reais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ COMO FUNCIONA ════════════ -->
+<div class="journey-wrap" id="como-funciona">
+  <div class="journey-deco1" aria-hidden="true"></div>
+  <div class="journey-deco2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sr">
+      <div class="eyebrow">A jornada</div>
+      <h2 class="h-section">Como funciona seu<br><em>cuidado.</em></h2>
+    </div>
+    <div class="timeline" id="tl">
+      <div class="timeline-track" id="tlTrack"></div>
+      <div class="tl-item sr d1">
+        <div class="tl-node"><span class="tl-n">01</span></div>
+        <div class="tl-body">
+          <div class="tl-title">Primeiro contato</div>
+          <div class="tl-desc">Você entra em contato, tira dúvidas iniciais e agenda sua avaliação pelo WhatsApp. Sem pressão, sem compromisso imediato.</div>
+        </div>
+      </div>
+      <div class="tl-item sr d2">
+        <div class="tl-node"><span class="tl-n">02</span></div>
+        <div class="tl-body">
+          <div class="tl-title">Avaliação individual</div>
+          <div class="tl-desc">Gizelly ouve seus objetivos, histórico, inseguranças e expectativas com atenção, empatia e escuta real.</div>
+        </div>
+      </div>
+      <div class="tl-item sr d3">
+        <div class="tl-node"><span class="tl-n">03</span></div>
+        <div class="tl-body">
+          <div class="tl-title">Planejamento</div>
+          <div class="tl-desc">É construído um plano estético coerente com seus traços, necessidades e possibilidades, sempre com transparência.</div>
+        </div>
+      </div>
+      <div class="tl-item sr d4">
+        <div class="tl-node"><span class="tl-n">04</span></div>
+        <div class="tl-body">
+          <div class="tl-title">Procedimento</div>
+          <div class="tl-desc">O procedimento é realizado com técnica, zelo, cuidado e responsabilidade em um ambiente seguro e confortável.</div>
+        </div>
+      </div>
+      <div class="tl-item sr d5">
+        <div class="tl-node"><span class="tl-n">05</span></div>
+        <div class="tl-body">
+          <div class="tl-title">Acompanhamento</div>
+          <div class="tl-desc">Após o atendimento, você recebe orientações completas para aproveitar o resultado com segurança e confiança.</div>
+        </div>
+      </div>
+    </div>
+    <div class="journey-cta sr">
+      <p class="journey-cta-q">Pronta para começar sua jornada de cuidado?</p>
+      <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-journey">Agendar minha avaliação</a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ SOBRE ════════════ -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="about-layout">
+      <div style="position:relative" class="sr sr-left sr-slow">
+        <div class="about-frame">
+          <div class="frame-c fc-tl" style="opacity:.4"></div><div class="frame-c fc-tr" style="opacity:.4"></div>
+          <div class="frame-c fc-bl" style="opacity:.4"></div><div class="frame-c fc-br" style="opacity:.4"></div>
+          <svg class="about-frame-mono" viewBox="0 0 90 90" fill="none">
+            <circle cx="45" cy="45" r="43" stroke="#C8A45D" stroke-width=".7"/>
+            <path d="M17 45c0-11 7-18 18-18s14 7 14 7v8h-9v-5s-1.5-2.5-5-2.5c-4.5 0-8 4-8 10.5S31 55.5 35 55.5c3.5 0 6-2.2 6.5-5.5H33V45H49v5.5c-.8 8-7.5 13-14 13-11 0-18-7-18-18.5z" fill="#C8A45D" fill-opacity=".75"/>
+            <path d="M52 27h7.5L66 53.5 72.5 27H80L69.5 63H62L52 27z" fill="#4B342B" fill-opacity=".65"/>
+            <path d="M45 12L46 16 50 17.5 46 19 45 23 44 19 40 17.5 44 16Z" fill="#C8A45D" opacity=".8"/>
+          </svg>
+          <p class="about-frame-lbl">Foto profissional em breve</p>
+          <p class="about-frame-sub">Gizelly Viana</p>
+        </div>
+        <div class="about-badge">
+          <div class="badge-row">
+            <div class="badge-cross"></div>
+            <span class="badge-title">Gizelly Viana</span>
+          </div>
+          <div class="badge-text">Harmonização Facial<br>Rio Pardo de Minas, MG</div>
+        </div>
+      </div>
+
+      <div class="sr sr-right d1">
+        <div class="eyebrow">Sobre</div>
+        <h2 class="h-section">Conheça Gizelly <em>Viana.</em></h2>
+        <p class="about-desc">Gizelly Viana é uma profissional movida por propósito, cuidado e compromisso com a autoestima de cada paciente. Sua atuação une técnica, responsabilidade e um olhar sensível para realçar a beleza de forma natural, elegante e segura.</p>
+        <p class="about-desc">Seu trabalho é guiado por honestidade, transparência e coerência, sempre buscando oferecer uma experiência acolhedora, confortável e de excelência.</p>
+        <div class="about-vals">
+          <div class="about-val"><div class="val-tick"></div>Técnica com responsabilidade</div>
+          <div class="about-val"><div class="val-tick"></div>Atendimento humanizado e acolhedor</div>
+          <div class="about-val"><div class="val-tick"></div>Investimento constante em conhecimento</div>
+          <div class="about-val"><div class="val-tick"></div>Cuidado com cada detalhe</div>
+          <div class="about-val"><div class="val-tick"></div>Compromisso com autoestima e bem-estar</div>
+          <div class="about-val"><div class="val-tick"></div>Estética com propósito</div>
+        </div>
+        <blockquote class="about-phrase">"A beleza mora nos detalhes."</blockquote>
+        <div style="margin-top:28px">
+          <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-about">Agendar avaliação</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ DIFERENCIAIS ════════════ -->
+<section class="section" id="diferenciais" style="text-align:center">
+  <div class="container">
+    <div class="eyebrow sr" style="justify-content:center">Diferenciais</div>
+    <h2 class="h-section sr d1" style="text-align:center;margin:0 auto 16px">Por que escolher<br>esse <em>cuidado?</em></h2>
+    <div class="diff-grid">
+      <div class="diff-card glass-card sr d1"><div class="diff-n">01</div><h3>Zelo em cada atendimento</h3><p>Cada paciente é recebida com atenção genuína, escuta cuidadosa e cuidado real.</p></div>
+      <div class="diff-card glass-card sr d2"><div class="diff-n">02</div><h3>Técnica com responsabilidade</h3><p>Os procedimentos são planejados com critério, segurança e total transparência.</p></div>
+      <div class="diff-card glass-card sr d3"><div class="diff-n">03</div><h3>Resultado natural</h3><p>O objetivo é valorizar sua beleza, não transformar sua identidade.</p></div>
+      <div class="diff-card glass-card sr d2"><div class="diff-n">04</div><h3>Atendimento sincero</h3><p>Orientação com clareza e honestidade sobre o que faz sentido para cada caso.</p></div>
+      <div class="diff-card glass-card sr d3"><div class="diff-n">05</div><h3>Experiência acolhedora</h3><p>Um cuidado pensado para que você se sinta segura, respeitada e confiante.</p></div>
+      <div class="diff-card glass-card sr d4"><div class="diff-n">06</div><h3>Excelência e qualidade</h3><p>Busca constante por aperfeiçoamento, novos conhecimentos e estrutura confortável.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ TRANSFORMAÇÃO ════════════ -->
+<div class="transform-wrap">
+  <div class="container">
+    <div class="eyebrow sr" style="justify-content:center">Autoestima</div>
+    <h2 class="h-section sr d1" style="text-align:center;max-width:none;margin-bottom:16px">Mais do que estética, <em style="color:rgba(255,249,243,.6)">autoestima.</em></h2>
+    <p class="transform-phrase sr d2">O cuidado estético pode transformar a forma como você se enxerga.</p>
+    <p class="body-text centered sr d3" style="color:rgba(255,249,243,.45);margin-bottom:48px">Quando realizado com responsabilidade, ele ajuda a resgatar confiança, bem-estar e a sensação de estar em paz com o que vê no espelho.</p>
+    <div class="transform-grid">
+      <div class="tf-item sr d1"><div class="tf-mark"></div><p>Melhor autoestima</p></div>
+      <div class="tf-item sr d2"><div class="tf-mark"></div><p>Mais segurança</p></div>
+      <div class="tf-item sr d3"><div class="tf-mark"></div><p>Envelhecimento bem cuidado</p></div>
+      <div class="tf-item sr d2"><div class="tf-mark"></div><p>Beleza natural preservada</p></div>
+      <div class="tf-item sr d3"><div class="tf-mark"></div><p>Pele com aparência mais saudável</p></div>
+      <div class="tf-item sr d4"><div class="tf-mark"></div><p>Confiança ao se olhar no espelho</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ OBJEÇÕES ════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="obj-layout">
+      <div class="sr sr-left">
+        <div class="eyebrow">Dúvidas</div>
+        <h2 class="h-section">É normal ter dúvidas<br>antes de <em>começar.</em></h2>
+        <p class="obj-text">Antes de realizar um procedimento, muitas pessoas se perguntam se conseguirão manter, se o investimento compensa, se o resultado ficará natural. Por isso, a avaliação é essencial: ela orienta você com sinceridade.</p>
+        <div class="obj-chips">
+          <span class="obj-chip">Vai ficar natural?</span>
+          <span class="obj-chip">Consigo manter?</span>
+          <span class="obj-chip">O investimento compensa?</span>
+          <span class="obj-chip">Qual procedimento é ideal?</span>
+          <span class="obj-chip">É seguro para o meu caso?</span>
+        </div>
+        <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-obj">Tirar minhas dúvidas pelo WhatsApp</a>
+      </div>
+      <div class="obj-panel sr sr-right d2 sr-slow">
+        <svg class="obj-panel-mono" viewBox="0 0 72 72" fill="none">
+          <circle cx="36" cy="36" r="34" stroke="#C8A45D" stroke-width=".7"/>
+          <path d="M13 36c0-9.5 6.5-16 16-16s13 6 13 6v8H34v-4s-1.5-2-5-2c-4 0-7 3.5-7 8.5S25 45 29 45c3 0 5.5-2 6-5H28V36H42v4c-1 7.5-7 12-13 12-10 0-16-6.5-16-16z" fill="#C8A45D" fill-opacity=".55"/>
+          <path d="M45 20h7l6.5 25 6.5-25H72L62 52H54.5L45 20z" fill="#4B342B" fill-opacity=".45"/>
+          <path d="M36 9L37.2 13 41 14.5 37.2 16 36 20 34.8 16 31 14.5 34.8 13Z" fill="#C8A45D" opacity=".6"/>
+        </svg>
+        <h3>Cada dúvida merece<br>uma resposta sincera.</h3>
+        <p>A avaliação individual existe exatamente para isso: orientar você com clareza, sem pressão, sobre o melhor caminho para o seu caso.</p>
+        <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center" id="cta-obj2">Falar com Gizelly</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CTA BAND ════════════ -->
+<div class="cta-band">
+  <div class="container">
+    <h2 class="sr">Sua beleza pode ser cuidada com leveza, técnica e responsabilidade.</h2>
+    <p class="sr d1">Agende sua avaliação e descubra o melhor caminho para valorizar seus traços com naturalidade.</p>
+    <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold sr d2" id="cta-band">Agendar avaliação</a>
+  </div>
+</div>
+
+<!-- ════════════ FAQ ════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="sr sr-left">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="h-section">Perguntas <em>frequentes.</em></h2>
+        <p class="body-text" style="margin-bottom:32px">Reunimos as dúvidas mais comuns. Se a sua não estiver aqui, fale diretamente pelo WhatsApp.</p>
+        <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-line" id="cta-faq">Falar pelo WhatsApp</a>
+      </div>
+      <div class="faq-list sr sr-right d1">
+        <!-- FAQ items -->
+        <div class="faq-item" id="fi1"><button class="faq-btn" aria-expanded="false">O resultado fica natural?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Sim. O objetivo é valorizar seus traços, respeitando sua identidade e evitando exageros. O planejamento é feito para que o resultado se integre naturalmente à sua aparência.</div></div></div>
+        <div class="faq-item" id="fi2"><button class="faq-btn" aria-expanded="false">Qual procedimento é ideal para mim?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Isso é definido após uma avaliação individual, considerando seu rosto, objetivos e necessidades. Não existe receita pronta — cada plano é construído de forma personalizada.</div></div></div>
+        <div class="faq-item" id="fi3"><button class="faq-btn" aria-expanded="false">Botox e preenchimento são a mesma coisa?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Não. São procedimentos diferentes, com indicações distintas. O botox atua na musculatura para suavizar linhas de expressão; o preenchimento restitui volume e contorno. A avaliação ajuda a definir o que faz sentido.</div></div></div>
+        <div class="faq-item" id="fi4"><button class="faq-btn" aria-expanded="false">Bioestimulador de colágeno dói?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">A sensibilidade varia de pessoa para pessoa, mas o procedimento é conduzido com cuidado para tornar a experiência mais confortável. A Gizelly explica todo o processo com antecedência.</div></div></div>
+        <div class="faq-item" id="fi5"><button class="faq-btn" aria-expanded="false">Quanto tempo dura o resultado?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Depende do procedimento, do organismo e da rotina de cada paciente. Durante a avaliação, Gizelly irá orientar com clareza sobre o que esperar e como preservar o resultado.</div></div></div>
+        <div class="faq-item" id="fi6"><button class="faq-btn" aria-expanded="false">Preciso fazer manutenção?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Alguns procedimentos exigem manutenção para preservar os resultados. Isso será explicado de forma clara durante o planejamento, para que você possa tomar a decisão mais coerente com sua realidade.</div></div></div>
+        <div class="faq-item" id="fi7"><button class="faq-btn" aria-expanded="false">Posso parcelar?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Consulte as condições disponíveis no momento do agendamento. Gizelly irá apresentar as opções com transparência durante a avaliação.</div></div></div>
+        <div class="faq-item" id="fi8"><button class="faq-btn" aria-expanded="false">Como faço para agendar?<span class="faq-tog"></span></button><div class="faq-answer"><div class="faq-inner">Basta clicar no botão de WhatsApp em qualquer ponto desta página. A mensagem já vem pré-preenchida — é só enviar e aguardar o retorno da Gizelly.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CTA FINAL ════════════ -->
+<div class="cta-final" id="contato">
+  <div class="container" style="position:relative;z-index:1">
+    <svg class="cta-final-mono sr" viewBox="0 0 78 78" fill="none">
+      <circle cx="39" cy="39" r="37" stroke="#C8A45D" stroke-width=".6"/>
+      <circle cx="39" cy="39" r="31" stroke="#C8A45D" stroke-width=".35" stroke-dasharray="3 6"/>
+      <path d="M14 39c0-10 7.5-17.5 18-17.5S47 28 47 28v9H38V33s-2-3-6.5-3c-5 0-8.5 4-8.5 9s3.5 9 8.5 9c4 0 6.5-2.5 7.5-6H31V39H49v5.5c-1 9-8.5 14-18 14-10.5 0-17-8-17-19.5z" fill="#C8A45D" fill-opacity=".8"/>
+      <path d="M51 21.5h9L68.5 57 77 21.5h9L71.5 56.5H63L51 21.5z" fill="rgba(255,249,243,.7)"/>
+      <path d="M39 9L40.2 13 44 14.5 40.2 16 39 20 37.8 16 34 14.5 37.8 13Z" fill="#C8A45D"/>
+    </svg>
+    <div class="eyebrow sr d1" style="justify-content:center">Comece agora</div>
+    <h2 class="cta-final-h sr d2">Comece seu cuidado com quem entende a beleza como detalhe, propósito e responsabilidade.</h2>
+    <p class="cta-final-sub sr d3">Agende sua avaliação e descubra como realçar sua beleza natural com segurança, elegância e planejamento.</p>
+    <div class="cta-final-btns sr d4">
+      <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-final-wa">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.12 1.524 5.849L.057 23.457a.75.75 0 00.93.931l5.608-1.467A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.975 9.975 0 01-5.14-1.425l-.37-.22-3.33.871.885-3.24-.24-.376A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Agendar avaliação pelo WhatsApp
+      </a>
+      <a href="#procedimentos" class="btn btn-dark" id="cta-final-proc">Conhecer procedimentos</a>
+    </div>
+    <p class="cta-final-phrase sr d5">— A beleza mora nos detalhes.</p>
+  </div>
+</div>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand-logo">
+          <svg class="f-logo-glyph" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="17" stroke="#C8A45D" stroke-width=".6" stroke-opacity=".7"/>
+            <path d="M7.5 18c0-5.5 3.8-9.5 9.2-9.5s7.8 3.5 7.8 3.5v4.5h-5v-2.5c-.5-1-1.4-1.5-2.8-1.5-2.6 0-4.4 2.5-4.4 5.5s1.8 5.5 4.4 5.5c2 0 3.2-1 3.8-2.8H17v-3h7.5v2.5c-.7 4-3.8 6.8-7.8 6.8-5.2 0-9.2-4-9.2-8.5z" fill="#C8A45D" fill-opacity=".8"/>
+            <path d="M22 8.5h3.5L29 19.5l3.5-11h3.5L30.5 27.5H27L22 8.5z" fill="rgba(255,249,243,.65)"/>
+            <path d="M18 4L18.6 6 21 6.5 18.6 7 18 9 17.4 7 15 6.5 17.4 6Z" fill="#C8A45D" opacity=".8"/>
+          </svg>
+          <div>
+            <div class="f-brand-name">Gizelly Viana</div>
+            <div class="f-brand-sub">Harmonização Facial</div>
+          </div>
+        </div>
+        <p class="f-desc">Beleza, saúde e autoestima com responsabilidade. Procedimentos estéticos faciais realizados com técnica, cuidado e propósito.</p>
+        <div class="f-socials">
+          <a href="https://www.instagram.com/gizelly_viana/" target="_blank" rel="noopener" class="f-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r=".75" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/5538991644520" target="_blank" rel="noopener" class="f-social" aria-label="WhatsApp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.12 1.524 5.849L.057 23.457a.75.75 0 00.93.931l5.608-1.467A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.975 9.975 0 01-5.14-1.425l-.37-.22-3.33.871.885-3.24-.24-.376A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#procedimentos">Procedimentos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contato</h4>
+        <div class="f-contact"><span class="f-contact-dot"></span><span>Rio Pardo de Minas, MG</span></div>
+        <div class="f-contact"><span class="f-contact-dot"></span><a href="https://wa.me/5538991644520" target="_blank" rel="noopener">+55 38 99164-4520</a></div>
+        <div class="f-contact"><span class="f-contact-dot"></span><a href="https://www.instagram.com/gizelly_viana/" target="_blank" rel="noopener">@gizelly_viana</a></div>
+        <div style="margin-top:20px">
+          <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:11px 20px" id="cta-footer">Agendar avaliação</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Gizelly Viana — Harmonização Facial. Todos os direitos reservados.</p>
+      <p class="footer-phrase">"A beleza mora nos detalhes."</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<div class="wa-float">
+  <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="wa-float-btn" id="wa-mob">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.12 1.524 5.849L.057 23.457a.75.75 0 00.93.931l5.608-1.467A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.975 9.975 0 01-5.14-1.425l-.37-.22-3.33.871.885-3.24-.24-.376A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Agendar avaliação
+  </a>
+</div>
+
+<!-- BACK TOP -->
+<button class="back-top" id="backTop" aria-label="Voltar ao topo"></button>
+
+<!-- ════════════════════════════════════════
+  JAVASCRIPT ENGINE
+════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Particles ── */
+  (function spawnParticles() {
+    const c = document.getElementById('particles');
+    if (!c) return;
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 3 + 1.5;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random()*100}%;
+        bottom:${Math.random()*30}%;
+        animation-duration:${Math.random()*8+6}s;
+        animation-delay:${Math.random()*8}s;
+      `;
+      c.appendChild(p);
+    }
+  })();
+
+  /* ── Progress bar ── */
+  const prog = document.getElementById('prog');
+
+  /* ── Navbar ── */
+  const nav = document.getElementById('nav');
+
+  /* ── Back to top ── */
+  const backTop = document.getElementById('backTop');
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ── Hamburger / Drawer ── */
+  const ham = document.getElementById('ham');
+  const drawer = document.getElementById('drawer');
+  const dOv = document.getElementById('dOv');
+  const closeDrawer = () => {
+    ham.classList.remove('open');
+    drawer.classList.remove('open');
+    dOv.classList.remove('open');
+    ham.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+  ham.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    ham.classList.toggle('open', open);
+    dOv.classList.toggle('open', open);
+    ham.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  dOv.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+
+  /* ── Active nav links ── */
+  const navAs = document.querySelectorAll('.nav-links a');
+  const sections = ['inicio','identificacao','filosofia','procedimentos','como-funciona','sobre','diferenciais','faq','contato'];
+  function updateNav() {
+    let cur = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= 120) cur = id;
+    });
+    navAs.forEach(a => {
+      const h = a.getAttribute('href').replace('#','');
+      a.classList.toggle('active', h === cur);
+    });
+  }
+
+  /* ── Timeline track ── */
+  const tlTrack = document.getElementById('tlTrack');
+  function checkTimeline() {
+    if (!tlTrack) return;
+    const rect = tlTrack.parentElement.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.8) {
+      tlTrack.classList.add('grown');
+    } else {
+      tlTrack.classList.remove('grown');
+    }
+  }
+
+  /* ── BIDIRECTIONAL SCROLL REVEAL ENGINE ──
+     Uses IntersectionObserver to detect:
+     - element entering from below → add .in
+     - element leaving going up   → add .above (animate out upwards)
+     - element entering from above (scroll up) → remove .above, add .in
+     - element leaving going down → remove .in (back to default / below state)
+  ── */
+  let lastScrollY = window.scrollY;
+  let scrollDir = 1; // 1 = down, -1 = up
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    scrollDir = y > lastScrollY ? 1 : -1;
+    lastScrollY = y;
+
+    // Progress bar
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    prog.style.width = (y / max * 100) + '%';
+
+    // Navbar
+    nav.classList.toggle('stuck', y > 40);
+
+    // Back to top
+    backTop.classList.toggle('up', y > 400);
+
+    // Nav active
+    updateNav();
+    // Timeline
+    checkTimeline();
+  }, { passive: true });
+
+  // Observer threshold list for smooth reveal at multiple points
+  const thresholds = [0, 0.08, 0.15, 0.25, 0.5];
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      const rect = entry.boundingClientRect;
+      const vH = window.innerHeight;
+
+      if (entry.isIntersecting) {
+        // Element is visible → animate in
+        el.classList.add('in');
+        el.classList.remove('above');
+      } else {
+        if (rect.top < 0) {
+          // Element scrolled above the viewport → "above" state (animate out upwards)
+          el.classList.add('above');
+          el.classList.remove('in');
+        } else {
+          // Element is below viewport → back to initial hidden state (below)
+          el.classList.remove('in');
+          el.classList.remove('above');
+        }
+      }
+    });
+  }, { threshold: thresholds, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+
+  /* ── Smooth anchor scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) {
+        e.preventDefault();
+        const top = t.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  /* ── FAQ Accordion ── */
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const ans = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(fi => {
+        fi.classList.remove('open');
+        fi.querySelector('.faq-answer').style.maxHeight = '0';
+        fi.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  /* ── Parallax: hero rings on scroll ── */
+  const hr1 = document.querySelector('.hr1');
+  const hr2 = document.querySelector('.hr2');
+  if (hr1 && hr2 && window.matchMedia('(min-width:900px)').matches) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      hr1.style.transform = `translateY(${y * 0.10}px)`;
+      hr2.style.transform = `translateY(${y * 0.06}px)`;
+    }, { passive: true });
+  }
+
+  /* ── Initial check ── */
+  checkTimeline();
+  updateNav();
+
+  // Trigger initial reveals for elements already in view
+  setTimeout(() => {
+    document.querySelectorAll('.sr').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.92) {
+        el.classList.add('in');
+      }
+    });
+  }, 80);
+
+})();
+</script>
+</body>
+</html>
