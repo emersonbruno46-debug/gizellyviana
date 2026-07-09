@@ -649,9 +649,7 @@ button { font-family: var(--sans); cursor: pointer; }
 /* ═══════════════════════════════════════════════════════
    PROCEDURES
 ═══════════════════════════════════════════════════════ */
-.proc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-.proc-row2 { display: flex; gap: 24px; margin-top: 24px; }
-.proc-row2 .proc-card { flex: 1; }
+.proc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
 .proc-card {
   padding: 44px 36px; position: relative; overflow: hidden;
   transition: transform .5s var(--ease-out), box-shadow .5s, border-color .3s;
@@ -692,10 +690,36 @@ button { font-family: var(--sans); cursor: pointer; }
 .proc-card h3 { font-family: var(--serif); font-size: 1.28rem; font-weight: 500; color: var(--c-brown); margin-bottom: 12px; line-height: 1.28; }
 .proc-card p { font-size: .88rem; color: var(--t-muted); line-height: 1.80; font-weight: 300; }
 
+.proc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+.proc-tag {
+  font-family: var(--sans);
+  font-size: 0.70rem;
+  font-weight: 500;
+  color: var(--t-body);
+  background: rgba(200, 164, 93, 0.06);
+  border: 1px solid rgba(200, 164, 93, 0.16);
+  padding: 4px 10px;
+  border-radius: 100px;
+  transition: all 0.3s var(--ease-out);
+}
+.proc-card:hover .proc-tag {
+  border-color: rgba(200, 164, 93, 0.4);
+  background: rgba(200, 164, 93, 0.10);
+}
+.proc-tag:hover {
+  background: var(--c-gold) !important;
+  color: var(--c-brown) !important;
+  border-color: var(--c-gold) !important;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 1000px) {
   .proc-grid { grid-template-columns: 1fr 1fr; }
-  .proc-row2 { flex-direction: column; }
-  .proc-row2 .proc-card { width: 100%; }
 }
 @media (max-width: 580px) { .proc-grid { grid-template-columns: 1fr; } }
 
@@ -1256,40 +1280,41 @@ button { font-family: var(--sans); cursor: pointer; }
     <div class="sr" style="margin-bottom:56px">
       <div class="eyebrow">Procedimentos</div>
       <h2 class="h-section">Para valorizar sua beleza<br>com <em>naturalidade.</em></h2>
-      <p class="body-text" style="margin-top:10px;max-width:500px">Cada procedimento é escolhido com critério, planejamento e respeito aos seus traços e objetivos.</p>
+      <p class="body-text" style="margin-top:10px;max-width:500px">Cada procedimento é planejado com critério técnico e respeito à sua anatomia e objetivos individuais.</p>
     </div>
     <div class="proc-grid">
       <div class="proc-card glass-card sr d1">
         <div class="proc-n">01</div>
         <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
-        <h3>Toxina Botulínica<br>Botox</h3>
-        <p>Ajuda a suavizar linhas de expressão e prevenir marcas mais profundas, preservando a naturalidade do rosto com segurança e critério.</p>
+        <h3>Toxina Botulínica<br>(Botox)</h3>
+        <p>Suaviza rugas e linhas de expressão, além de atuar de forma preventiva para manter uma aparência descansada e natural.</p>
       </div>
       <div class="proc-card glass-card sr d2">
         <div class="proc-n">02</div>
         <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
-        <h3>Bioestimuladores<br>de Colágeno</h3>
-        <p>Estimulam a produção de colágeno natural, contribuindo para firmeza, qualidade da pele e envelhecimento mais saudável.</p>
+        <h3>Preenchimento<br>Facial</h3>
+        <p>Repõe volumes, define contornos e equilibra as proporções do rosto com ácido hialurônico, garantindo harmonia estética.</p>
+        <div class="proc-tags">
+          <span class="proc-tag">Preenchimento Labial</span>
+          <span class="proc-tag">Mento (Queixo)</span>
+          <span class="proc-tag">Rinomodelação</span>
+          <span class="proc-tag">Malar (Maçãs do Rosto)</span>
+          <span class="proc-tag">Mandíbula</span>
+          <span class="proc-tag">Bigode Chinês</span>
+          <span class="proc-tag">Preenchimento de Olheiras</span>
+        </div>
       </div>
       <div class="proc-card glass-card sr d3">
         <div class="proc-n">03</div>
         <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
-        <h3>Preenchimento<br>Facial</h3>
-        <p>Indicado para reposição de volume, contorno e equilíbrio facial, sempre com planejamento cuidadoso e respeito à anatomia.</p>
+        <h3>Bioestimuladores<br>de Colágeno</h3>
+        <p>Estimulam o próprio corpo a produzir colágeno, melhorando a sustentação, reduzindo a flacidez e devolvendo o viço à pele.</p>
       </div>
-    </div>
-    <div class="proc-row2">
-      <div class="proc-card glass-card sr d2">
+      <div class="proc-card glass-card sr d4">
         <div class="proc-n">04</div>
         <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
-        <h3>Harmonização<br>Facial</h3>
-        <p>Avaliação do conjunto do rosto para propor estratégias que valorizem os traços de forma elegante, equilibrada e natural.</p>
-      </div>
-      <div class="proc-card glass-card sr d3">
-        <div class="proc-n">05</div>
-        <div class="proc-bullet"><div class="proc-diamond"></div><div class="proc-line"></div></div>
-        <h3>Planejamento Estético<br>Individualizado</h3>
-        <p>Cada rosto é único. Por isso, o cuidado começa com uma análise detalhada das suas necessidades, expectativas e possibilidades reais.</p>
+        <h3>Fios de PDO</h3>
+        <p>Fios de polidioxanona que melhoram a flacidez cutânea, promovendo estímulo de colágeno e efeito lifting suave e contínuo.</p>
       </div>
     </div>
   </div>
