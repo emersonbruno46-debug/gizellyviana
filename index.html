@@ -1091,6 +1091,158 @@ button { font-family: var(--sans); cursor: pointer; }
   border-top: 1.5px solid var(--c-brown); border-right: 1.5px solid var(--c-brown);
   transform: rotate(-45deg) translate(1px, 2px);
 }
+/* ═══════════════════════════════════════════════════════
+   MOBILE CAROUSELS, TABS & RESPONSIVE RE-ADAPTATIONS
+═══════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Trava de Eixo Horizontal */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Padding & Margin Section Adjustments */
+  .section {
+    padding: 56px 0 !important;
+  }
+  .hero {
+    padding: 120px 0 56px !important;
+    min-height: auto !important;
+  }
+  .transform-wrap {
+    padding: 56px 0 !important;
+  }
+
+  /* Font-size adjustments to prevent clipping */
+  .h-section {
+    font-size: clamp(1.8rem, 6vw, 2.4rem) !important;
+  }
+  .hero-title {
+    font-size: clamp(2.2rem, 8vw, 3.2rem) !important;
+  }
+  .hero-sub {
+    margin-bottom: 24px !important;
+  }
+
+  /* Hero adjustments */
+  .hero-btns {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .hero-btns .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .hero-seals {
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  .hero-frame {
+    max-width: 100% !important;
+    aspect-ratio: 1/1 !important;
+    margin: 24px auto 0 !important;
+  }
+
+  /* About adjustments */
+  .about-frame {
+    max-width: 100% !important;
+    aspect-ratio: 1/1 !important;
+    margin: 0 auto !important;
+  }
+  .about-badge {
+    right: 12px !important;
+    bottom: 12px !important;
+    min-width: auto !important;
+    padding: 12px 16px !important;
+  }
+
+  /* Horizontal swipeable carousels for mobile */
+  .mobile-carousel {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 16px !important;
+    padding-bottom: 24px !important;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    scrollbar-width: none !important;
+    align-items: stretch !important;
+    touch-action: pan-y !important;
+  }
+  .mobile-carousel::-webkit-scrollbar {
+    display: none !important;
+  }
+  .mobile-carousel > * {
+    flex: 0 0 280px !important;
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Tabbed Procedures for Mobile */
+  .proc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    scrollbar-width: none;
+  }
+  .proc-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .proc-tab-btn {
+    padding: 10px 18px;
+    border-radius: 100px;
+    border: 1px solid var(--b-gold);
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--t-body);
+    font-family: var(--sans);
+    font-size: 0.76rem;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out);
+  }
+  .proc-tab-btn.active {
+    background: linear-gradient(135deg, var(--c-gold) 0%, var(--c-gold2) 100%);
+    color: var(--c-brown);
+    border-color: var(--c-gold);
+    box-shadow: 0 4px 12px rgba(200, 164, 93, 0.22);
+  }
+  
+  /* Hide all cards by default on mobile when tabbed, except the active one */
+  .proc-grid.tabbed-mobile {
+    display: block !important;
+  }
+  .proc-grid.tabbed-mobile > .proc-card {
+    display: none !important;
+  }
+  .proc-grid.tabbed-mobile > .proc-card.active {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -1197,19 +1349,11 @@ button { font-family: var(--sans); cursor: pointer; }
       <!-- Right -->
       <div style="display:flex;justify-content:center;align-items:center" class="sr sr-right d2 sr-slow">
         <div class="hero-frame">
+          <img src="FOTO-HERO.png" alt="Gizelly Viana — Harmonização Facial" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="eager">
           <div class="frame-c fc-tl"></div>
           <div class="frame-c fc-tr"></div>
           <div class="frame-c fc-bl"></div>
           <div class="frame-c fc-br"></div>
-          <svg class="frame-mono" viewBox="0 0 110 110" fill="none">
-            <circle cx="55" cy="55" r="52" stroke="#C8A45D" stroke-width=".8"/>
-            <circle cx="55" cy="55" r="46" stroke="#C8A45D" stroke-width=".4" stroke-dasharray="2 5"/>
-            <path d="M20 55c0-13 9-22 22-22s18 8 18 8v10H49v-6s-2-3.5-7-3.5c-5 0-10 4.5-10 11.5s5 11.5 10 11.5c4.5 0 8-2.8 9-7H41V48H61v7c-1 10-9.5 18-19 18-13 0-22-8-22-18z" fill="#C8A45D" fill-opacity=".85"/>
-            <path d="M63 33h9l7.5 28 7.5-28H97L83.5 77H74.5L63 33z" fill="#4B342B" fill-opacity=".75"/>
-            <path d="M55 14L56.4 19 61 20.5 56.4 22 55 27 53.6 22 49 20.5 53.6 19Z" fill="#C8A45D"/>
-          </svg>
-          <p class="frame-caption">Foto profissional em breve</p>
-          <p class="frame-caption-sub">Gizelly Viana</p>
         </div>
         <!-- Floating card -->
         <div class="hero-accent">
@@ -1263,7 +1407,7 @@ button { font-family: var(--sans); cursor: pointer; }
       <div class="orn-line rev"></div>
     </div>
     <p class="philosophy-text sr d3">A proposta não é mudar quem você é. É realçar o que já existe de bonito em você, respeitando seus traços, sua história e seus objetivos. Cada procedimento é conduzido com planejamento, responsabilidade e olhar atento aos detalhes.</p>
-    <div class="phil-grid">
+    <div class="phil-grid mobile-carousel">
       <div class="phil-card glass-card sr d1"><div class="phil-n">01</div><h4>Atendimento sincero</h4><p>Orientação clara sobre o que faz sentido para cada caso, sem pressão ou promessas exageradas.</p></div>
       <div class="phil-card glass-card sr d2"><div class="phil-n">02</div><h4>Planejamento individualizado</h4><p>Cada rosto é analisado de forma única, considerando traços, necessidades e possibilidades reais.</p></div>
       <div class="phil-card glass-card sr d3"><div class="phil-n">03</div><h4>Cuidado antes, durante e depois</h4><p>O acompanhamento não termina no procedimento. Você recebe orientações para viver a experiência com segurança.</p></div>
@@ -1281,6 +1425,12 @@ button { font-family: var(--sans); cursor: pointer; }
       <div class="eyebrow">Procedimentos</div>
       <h2 class="h-section">Para valorizar sua beleza<br>com <em>naturalidade.</em></h2>
       <p class="body-text" style="margin-top:10px;max-width:500px">Cada procedimento é planejado com critério técnico e respeito à sua anatomia e objetivos individuais.</p>
+    </div>
+    <div class="proc-tabs" role="tablist">
+      <button class="proc-tab-btn active" role="tab">Botox</button>
+      <button class="proc-tab-btn" role="tab">Preenchimento</button>
+      <button class="proc-tab-btn" role="tab">Bioestimuladores</button>
+      <button class="proc-tab-btn" role="tab">Fios de PDO</button>
     </div>
     <div class="proc-grid">
       <div class="proc-card glass-card sr d1">
@@ -1380,16 +1530,9 @@ button { font-family: var(--sans); cursor: pointer; }
     <div class="about-layout">
       <div style="position:relative" class="sr sr-left sr-slow">
         <div class="about-frame">
+          <img src="FOTO-SOBRE-GIZELLY.png" alt="Gizelly Viana" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
           <div class="frame-c fc-tl" style="opacity:.4"></div><div class="frame-c fc-tr" style="opacity:.4"></div>
           <div class="frame-c fc-bl" style="opacity:.4"></div><div class="frame-c fc-br" style="opacity:.4"></div>
-          <svg class="about-frame-mono" viewBox="0 0 90 90" fill="none">
-            <circle cx="45" cy="45" r="43" stroke="#C8A45D" stroke-width=".7"/>
-            <path d="M17 45c0-11 7-18 18-18s14 7 14 7v8h-9v-5s-1.5-2.5-5-2.5c-4.5 0-8 4-8 10.5S31 55.5 35 55.5c3.5 0 6-2.2 6.5-5.5H33V45H49v5.5c-.8 8-7.5 13-14 13-11 0-18-7-18-18.5z" fill="#C8A45D" fill-opacity=".75"/>
-            <path d="M52 27h7.5L66 53.5 72.5 27H80L69.5 63H62L52 27z" fill="#4B342B" fill-opacity=".65"/>
-            <path d="M45 12L46 16 50 17.5 46 19 45 23 44 19 40 17.5 44 16Z" fill="#C8A45D" opacity=".8"/>
-          </svg>
-          <p class="about-frame-lbl">Foto profissional em breve</p>
-          <p class="about-frame-sub">Gizelly Viana</p>
         </div>
         <div class="about-badge">
           <div class="badge-row">
@@ -1427,7 +1570,7 @@ button { font-family: var(--sans); cursor: pointer; }
   <div class="container">
     <div class="eyebrow sr" style="justify-content:center">Diferenciais</div>
     <h2 class="h-section sr d1" style="text-align:center;margin:0 auto 16px">Por que escolher<br>esse <em>cuidado?</em></h2>
-    <div class="diff-grid">
+    <div class="diff-grid mobile-carousel">
       <div class="diff-card glass-card sr d1"><div class="diff-n">01</div><h3>Zelo em cada atendimento</h3><p>Cada paciente é recebida com atenção genuína, escuta cuidadosa e cuidado real.</p></div>
       <div class="diff-card glass-card sr d2"><div class="diff-n">02</div><h3>Técnica com responsabilidade</h3><p>Os procedimentos são planejados com critério, segurança e total transparência.</p></div>
       <div class="diff-card glass-card sr d3"><div class="diff-n">03</div><h3>Resultado natural</h3><p>O objetivo é valorizar sua beleza, não transformar sua identidade.</p></div>
@@ -1802,6 +1945,73 @@ button { font-family: var(--sans); cursor: pointer; }
   /* ── Initial check ── */
   checkTimeline();
   updateNav();
+
+  /* ── Mobile Carousels Auto-scroll ── */
+  const carousels = document.querySelectorAll('.mobile-carousel');
+  carousels.forEach(carousel => {
+    let scrollInterval;
+    let scrollDirection = 1;
+
+    function startAutoScroll() {
+      scrollInterval = setInterval(() => {
+        carousel.scrollLeft += scrollDirection;
+        if (carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 1)) {
+          scrollDirection = -1;
+        } else if (carousel.scrollLeft <= 0) {
+          scrollDirection = 1;
+        }
+      }, 35);
+    }
+
+    startAutoScroll();
+
+    carousel.addEventListener('touchstart', () => clearInterval(scrollInterval), {passive: true});
+    carousel.addEventListener('touchend', () => {
+      setTimeout(startAutoScroll, 2500);
+    }, {passive: true});
+  });
+
+  /* ── Procedures Mobile Tabs ── */
+  const tabBtns = document.querySelectorAll('.proc-tab-btn');
+  const cards = document.querySelectorAll('.proc-grid > .proc-card');
+  const grid = document.querySelector('.proc-grid');
+
+  function initMobileTabs() {
+    if (window.innerWidth <= 768) {
+      grid.classList.add('tabbed-mobile');
+      
+      let activeIndex = 0;
+      tabBtns.forEach((btn, idx) => {
+        if (btn.classList.contains('active')) {
+          activeIndex = idx;
+        }
+      });
+      
+      tabBtns.forEach(btn => btn.classList.remove('active'));
+      cards.forEach(card => card.classList.remove('active'));
+      
+      tabBtns[activeIndex].classList.add('active');
+      cards[activeIndex].classList.add('active');
+      cards[activeIndex].classList.add('in');
+    } else {
+      grid.classList.remove('tabbed-mobile');
+      cards.forEach(card => card.classList.remove('active'));
+    }
+  }
+
+  tabBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      cards.forEach(c => c.classList.remove('active'));
+      
+      btn.classList.add('active');
+      cards[index].classList.add('active');
+      cards[index].classList.add('in');
+    });
+  });
+
+  window.addEventListener('resize', initMobileTabs);
+  initMobileTabs();
 
   // Trigger initial reveals for elements already in view
   setTimeout(() => {
