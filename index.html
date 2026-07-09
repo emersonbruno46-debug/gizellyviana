@@ -1971,7 +1971,50 @@ button { font-family: var(--sans); cursor: pointer; }
   checkTimeline();
   updateNav();
 
+  /* ── Mobile Carousels Auto-scroll (Card-by-Card) ── */
+  const carousels = document.querySelectorAll('.mobile-carousel');
+  carousels.forEach(carousel => {
+    let scrollInterval;
+    let activeCardIndex = 0;
 
+    function getCardWidth() {
+      const firstCard = carousel.firstElementChild;
+      if (!firstCard) return 0;
+      const gap = parseFloat(window.getComputedStyle(carousel).gap) || 16;
+      return firstCard.offsetWidth + gap;
+    }
+
+    function autoScrollToNext() {
+      const cardsCount = carousel.children.length;
+      if (cardsCount <= 1) return;
+      
+      activeCardIndex = (activeCardIndex + 1) % cardsCount;
+      const cardWidth = getCardWidth();
+      
+      carousel.scrollTo({
+        left: activeCardIndex * cardWidth,
+        behavior: 'smooth'
+      });
+    }
+
+    function startAutoScroll() {
+      scrollInterval = setInterval(autoScrollToNext, 3000);
+    }
+
+    startAutoScroll();
+
+    carousel.addEventListener('touchstart', () => clearInterval(scrollInterval), {passive: true});
+    carousel.addEventListener('touchend', () => {
+      setTimeout(() => {
+        const cardWidth = getCardWidth();
+        if (cardWidth > 0) {
+          activeCardIndex = Math.round(carousel.scrollLeft / cardWidth);
+        }
+        clearInterval(scrollInterval);
+        startAutoScroll();
+      }, 1500);
+    }, {passive: true});
+  });
 
   /* ── Procedures Mobile Tabs ── */
   const tabBtns = document.querySelectorAll('.proc-tab-btn');
