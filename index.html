@@ -315,16 +315,14 @@ button { font-family: var(--sans); cursor: pointer; }
 
 /* Logo */
 .nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.logo-glyph { width: 42px; height: 42px; }
-.logo-words { display: flex; flex-direction: column; line-height: 1.1; }
-.logo-name {
-  font-family: var(--serif); font-size: 1.1rem; font-weight: 500;
-  color: var(--c-brown); letter-spacing: .03em;
+.logo-comprida-nav {
+  height: 42px;
+  width: auto;
+  display: block;
+  transition: transform var(--ease-out) var(--dur);
 }
-.logo-sub {
-  font-family: var(--sans); font-size: .56rem;
-  letter-spacing: .22em; text-transform: uppercase;
-  color: var(--c-taupe); font-weight: 500;
+.logo-comprida-nav:hover {
+  transform: scale(1.02);
 }
 
 /* Links */
@@ -942,7 +940,7 @@ button { font-family: var(--sans); cursor: pointer; }
   background: linear-gradient(145deg, var(--c-light) 0%, var(--c-nude) 100%);
   border-radius: var(--r-xl); border: 1px solid var(--b-soft); text-align: center;
 }
-.obj-panel-mono { width: 72px; height: 72px; margin: 0 auto 22px; opacity: .3; }
+.obj-panel-mono { width: 72px; height: 72px; margin: 0 auto 22px; opacity: 0.95; }
 .obj-panel h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; color: var(--c-brown); margin-bottom: 12px; font-style: italic; }
 .obj-panel p { font-size: .85rem; color: var(--t-muted); line-height: 1.78; font-weight: 300; margin-bottom: 26px; }
 @media (max-width: 768px) { .obj-layout { grid-template-columns: 1fr; gap: 48px; } .obj-panel { padding: 32px 24px; } }
@@ -1012,7 +1010,7 @@ button { font-family: var(--sans); cursor: pointer; }
 .cta-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 70% at 50% 60%, rgba(200,164,93,.07) 0%, transparent 65%); pointer-events: none; }
 .cta-final .eyebrow { color: var(--c-gold); }
 .cta-final .eyebrow::before, .cta-final .eyebrow::after { background: var(--c-gold); }
-.cta-final-mono { width: 88px; height: 88px; margin: 0 auto 38px; opacity: .22; }
+.cta-final-mono { width: 88px; height: 88px; margin: 0 auto 38px; opacity: 0.9; }
 .cta-final-h {
   font-family: var(--serif); font-size: clamp(2rem,4.5vw,3.8rem);
   font-weight: 300; color: rgba(255,249,243,.95);
@@ -1034,10 +1032,16 @@ button { font-family: var(--sans); cursor: pointer; }
 .footer { background: #2B1A14; padding: 80px 0 32px; position: relative; }
 .footer::before { content: ''; position: absolute; top: 0; left: 5%; right: 5%; height: 1px; background: linear-gradient(to right, transparent, rgba(200,164,93,.35), transparent); }
 .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 64px; margin-bottom: 56px; }
-.f-brand-logo { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
-.f-logo-glyph { width: 36px; height: 36px; opacity: .8; }
-.f-brand-name { font-family: var(--serif); font-size: 1.05rem; color: rgba(255,249,243,.9); }
-.f-brand-sub { font-size: .55rem; letter-spacing: .20em; text-transform: uppercase; color: rgba(200,164,93,.65); }
+.logo-comprida-footer {
+  height: 38px;
+  width: auto;
+  display: block;
+  opacity: 0.85;
+  transition: opacity .3s;
+}
+.logo-comprida-footer:hover {
+  opacity: 1;
+}
 .f-desc { font-size: .82rem; color: rgba(255,249,243,.35); line-height: 1.75; font-weight: 300; margin-bottom: 20px; max-width: 250px; }
 .f-socials { display: flex; gap: 10px; }
 .f-social { width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(200,164,93,.2); display: flex; align-items: center; justify-content: center; color: rgba(255,249,243,.35); transition: .35s; }
@@ -1369,20 +1373,7 @@ button { font-family: var(--sans); cursor: pointer; }
   <div class="container">
     <div class="nav-inner">
       <a href="#inicio" class="nav-logo" aria-label="Início">
-        <!-- GV Monogram SVG (custom, hand-crafted feel) -->
-        <svg class="logo-glyph" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="21" cy="21" r="20" stroke="#C8A45D" stroke-width=".6" stroke-opacity=".55"/>
-          <!-- G letterform -->
-          <path d="M9.5 21c0-5.5 3.8-9.5 9-9.5 3.5 0 6 1.8 7.2 3.5v4.5h-5v-2.5c-.5-1-1.6-1.7-2.8-1.7-2.8 0-4.6 2.4-4.6 5.7 0 3.3 1.8 5.7 4.6 5.7 2 0 3.5-1.1 4-3H17v-3h7.7v2.5c-.6 3.8-3.8 6.8-7.8 6.8-5.2 0-7.4-4.2-7.4-9z" fill="#C8A45D" fill-opacity=".9"/>
-          <!-- V letterform -->
-          <path d="M24.5 11.5h3.2l3 11.2 3-11.2h3.3L32.8 30.5h-3.5L24.5 11.5z" fill="#4B342B" fill-opacity=".85"/>
-          <!-- 4-point star -->
-          <path d="M21 4.5L21.6 7 24 7.5 21.6 8 21 10.5 20.4 8 18 7.5 20.4 7Z" fill="#C8A45D" opacity=".88"/>
-        </svg>
-        <div class="logo-words">
-          <span class="logo-name">Gizelly Viana</span>
-          <span class="logo-sub">Harmonização Facial</span>
-        </div>
+        <img src="comprida.svg" alt="Gizelly Viana — Harmonização Facial" class="logo-comprida-nav">
       </a>
 
       <div class="nav-links" id="navLinks">
@@ -1801,12 +1792,7 @@ button { font-family: var(--sans); cursor: pointer; }
         <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" id="cta-obj">Tirar minhas dúvidas pelo WhatsApp</a>
       </div>
       <div class="obj-panel sr sr-right d2 sr-slow">
-        <svg class="obj-panel-mono" viewBox="0 0 72 72" fill="none">
-          <circle cx="36" cy="36" r="34" stroke="#C8A45D" stroke-width=".7"/>
-          <path d="M13 36c0-9.5 6.5-16 16-16s13 6 13 6v8H34v-4s-1.5-2-5-2c-4 0-7 3.5-7 8.5S25 45 29 45c3 0 5.5-2 6-5H28V36H42v4c-1 7.5-7 12-13 12-10 0-16-6.5-16-16z" fill="#C8A45D" fill-opacity=".55"/>
-          <path d="M45 20h7l6.5 25 6.5-25H72L62 52H54.5L45 20z" fill="#4B342B" fill-opacity=".45"/>
-          <path d="M36 9L37.2 13 41 14.5 37.2 16 36 20 34.8 16 31 14.5 34.8 13Z" fill="#C8A45D" opacity=".6"/>
-        </svg>
+        <img class="obj-panel-mono" src="simbolo.svg" alt="Símbolo Gizelly Viana">
         <h3>Cada dúvida merece<br>uma resposta sincera.</h3>
         <p>A avaliação individual existe exatamente para isso: orientar você com clareza, sem pressão, sobre o melhor caminho para o seu caso.</p>
         <a href="https://wa.me/5538991644520?text=Ol%C3%A1%2C%20Gizelly%21%20Vim%20pela%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center" id="cta-obj2">Falar com Gizelly</a>
@@ -1852,13 +1838,7 @@ button { font-family: var(--sans); cursor: pointer; }
 <!-- ════════════ CTA FINAL ════════════ -->
 <div class="cta-final" id="contato">
   <div class="container" style="position:relative;z-index:1">
-    <svg class="cta-final-mono sr" viewBox="0 0 78 78" fill="none">
-      <circle cx="39" cy="39" r="37" stroke="#C8A45D" stroke-width=".6"/>
-      <circle cx="39" cy="39" r="31" stroke="#C8A45D" stroke-width=".35" stroke-dasharray="3 6"/>
-      <path d="M14 39c0-10 7.5-17.5 18-17.5S47 28 47 28v9H38V33s-2-3-6.5-3c-5 0-8.5 4-8.5 9s3.5 9 8.5 9c4 0 6.5-2.5 7.5-6H31V39H49v5.5c-1 9-8.5 14-18 14-10.5 0-17-8-17-19.5z" fill="#C8A45D" fill-opacity=".8"/>
-      <path d="M51 21.5h9L68.5 57 77 21.5h9L71.5 56.5H63L51 21.5z" fill="rgba(255,249,243,.7)"/>
-      <path d="M39 9L40.2 13 44 14.5 40.2 16 39 20 37.8 16 34 14.5 37.8 13Z" fill="#C8A45D"/>
-    </svg>
+    <img class="cta-final-mono sr" src="simbolo.svg" alt="Símbolo Gizelly Viana">
     <div class="eyebrow sr d1" style="justify-content:center">Comece agora</div>
     <h2 class="cta-final-h sr d2">Comece seu cuidado com quem entende a beleza como detalhe, propósito e responsabilidade.</h2>
     <p class="cta-final-sub sr d3">Agende sua avaliação e descubra como realçar sua beleza natural com segurança, elegância e planejamento.</p>
@@ -1879,16 +1859,7 @@ button { font-family: var(--sans); cursor: pointer; }
     <div class="footer-grid">
       <div>
         <div class="f-brand-logo">
-          <svg class="f-logo-glyph" viewBox="0 0 36 36" fill="none">
-            <circle cx="18" cy="18" r="17" stroke="#C8A45D" stroke-width=".6" stroke-opacity=".7"/>
-            <path d="M7.5 18c0-5.5 3.8-9.5 9.2-9.5s7.8 3.5 7.8 3.5v4.5h-5v-2.5c-.5-1-1.4-1.5-2.8-1.5-2.6 0-4.4 2.5-4.4 5.5s1.8 5.5 4.4 5.5c2 0 3.2-1 3.8-2.8H17v-3h7.5v2.5c-.7 4-3.8 6.8-7.8 6.8-5.2 0-9.2-4-9.2-8.5z" fill="#C8A45D" fill-opacity=".8"/>
-            <path d="M22 8.5h3.5L29 19.5l3.5-11h3.5L30.5 27.5H27L22 8.5z" fill="rgba(255,249,243,.65)"/>
-            <path d="M18 4L18.6 6 21 6.5 18.6 7 18 9 17.4 7 15 6.5 17.4 6Z" fill="#C8A45D" opacity=".8"/>
-          </svg>
-          <div>
-            <div class="f-brand-name">Gizelly Viana</div>
-            <div class="f-brand-sub">Harmonização Facial</div>
-          </div>
+          <img src="comprida.svg" alt="Gizelly Viana — Harmonização Facial" class="logo-comprida-footer">
         </div>
         <p class="f-desc">Beleza, saúde e autoestima com responsabilidade. Procedimentos estéticos faciais realizados com técnica, cuidado e propósito.</p>
         <div class="f-socials">
